@@ -1,0 +1,22 @@
+id: F042
+function: AddNewReservationScreen
+range:
+- 806
+- 817
+args:
+- ReservationPtr *ReservationList
+- UserPtr UserList
+- RoomPtr *RoomList
+return: void
+requirement:
+  trigger: "ユーザーがメニュー操作で新しい予約を追加する処理を開始したとき"
+  action: |
+    ・画面に「Add New Reservation」のヘッダーを表示  
+    ・`Reservation` 構造体を動的に確保  
+    ・予約情報の入力を `ReadReservationInfo()` で取得  
+    ・リストに追加して「成功」メッセージを表示  
+    ・Enter キー入力を待ってメニューに戻る
+  effect: "ユーザーが手動入力した予約情報が予約リストに追加される"
+  constraint: |
+    ・Reservation の確保に malloc を使用  
+    ・既存予約/ユーザー/部屋との整合性は `ReadReservationInfo` 側で担保される前提

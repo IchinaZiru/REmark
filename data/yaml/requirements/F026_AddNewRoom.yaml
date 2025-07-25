@@ -1,0 +1,14 @@
+id: F026
+function: AddNewRoom
+range:
+- 472
+- 486
+args:
+- RoomPtr RoomList
+- RoomPtr NewRoom
+return: RoomPtr
+requirement:
+  trigger: "新しい部屋を部屋リストに追加したいとき"
+  action: "部屋リストが空ならそのまま新しい部屋を返し、そうでなければ末尾に接続して返す"
+  effect: "部屋リストが新しいノードを含んだ状態に更新される"
+  constraint: "NewRoom 構造体のポインタは事前にメモリ確保・初期化されている必要がある"

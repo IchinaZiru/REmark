@@ -1,0 +1,13 @@
+id: F017
+function: AddNewUserScreen
+range:
+- 278
+- 296
+args:
+- UserPtr *UserList
+return: void
+requirement:
+  trigger: "ユーザー追加メニューを表示し、ユーザーの登録処理を開始したとき"
+  action: "ユーザー情報を入力・構造体に格納し、既存IDと重複しないかを確認してからリストに追加する"
+  effect: "新しいユーザーが登録されるか、重複している場合は警告が表示される"
+  constraint: "標準入力から取得したIDが既に存在していた場合は追加せず、同じ画面内で完結する"

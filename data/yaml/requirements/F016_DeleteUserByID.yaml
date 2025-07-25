@@ -1,0 +1,14 @@
+id: F016
+function: DeleteUserByID
+range:
+- 258
+- 276
+args:
+- UserPtr UserList
+- int ID
+return: UserPtr
+requirement:
+  trigger: "ユーザーIDを指定して対象ユーザーをリストから削除したいとき"
+  action: "リストを順に走査し、IDが一致するノードを見つけてリンクを切り、メモリを解放する"
+  effect: "指定したユーザーがリストから削除され、新たなリストが返される"
+  constraint: "削除対象のユーザーが存在しない場合の動作は undefined であり、事前確認が推奨される"

@@ -1,0 +1,13 @@
+id: F020
+function: DisplayUserListScreen
+range:
+- 332
+- 352
+args:
+- UserPtr UserList
+return: void
+requirement:
+  trigger: "登録済みユーザーの一覧を確認したいとき"
+  action: "ユーザーリストを先頭から順に走査し、各ユーザー情報を番号付きで表示する"
+  effect: "ユーザーが現在登録されている全データを把握できる"
+  constraint: "リストが空の場合は『List is empty!』と表示され、何も表示されない状態は避けられる"

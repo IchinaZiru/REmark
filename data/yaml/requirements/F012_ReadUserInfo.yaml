@@ -1,0 +1,13 @@
+id: F012
+function: ReadUserInfo
+range:
+- 203
+- 213
+args:
+- UserPtr *UserInfo
+return: void
+requirement:
+  trigger: "新しいユーザー情報を登録するために、ID・名前をユーザーから取得したいとき"
+  action: "標準入力からユーザーのID・名・姓を受け取り、構造体に格納する"
+  effect: "ユーザー情報構造体が適切に初期化・設定され、後続処理で使用可能となる"
+  constraint: "構造体のメモリ確保は呼び出し元で事前に行われている前提"

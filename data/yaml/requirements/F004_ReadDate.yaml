@@ -1,0 +1,13 @@
+id: F004
+function: ReadDate
+range:
+- 86
+- 92
+args:
+- char Message[MAX_STRING_SIZE]
+return: stDate
+requirement:
+  trigger: "日付の入力をユーザーに求める必要があるとき"
+  action: "指定されたメッセージを表示し、日・月・年の3つの数値を標準入力から取得して構造体に格納する"
+  effect: "ユーザーが入力した日付情報を1つの構造体として取得できる"
+  constraint: "入力値の妥当性（日付の正しさ）はこの関数では検証されない"
