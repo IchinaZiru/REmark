@@ -1,0 +1,20 @@
+id: F031
+function: SearchRoomByIDScreen
+range:
+  - 558
+  - 573
+args:
+  - RoomPtr RoomList
+return: void
+requirement:
+  trigger: ''
+  action: ''
+  effect: ''
+  constraint: ''
+code: "void SearchRoomByIDScreen(RoomPtr RoomList)\n{\n  ScreenHeader(\"\\tSearch
+  By ID\");\n  int ID;\n  printf(\"\\nPlease enter ID: \");\n  ID = ReadIntBetween(0,
+  9999);\n\n  RoomPtr Room = SearchRoomByID(RoomList, ID);\n\n  if (Room == NULL)\n\
+  \    printf(\"\\nRoom not Found!\\n\");\n  else\n    DisplayRoomCard(Room);\n\n\
+  \  PauseProgram();\n}\n"
+description: 
+  この関数は、ユーザーに部屋のIDを入力させ、そのIDに対応する部屋をリストから検索し、見つかった場合は部屋の情報を表示し、見つからない場合はその旨を通知します。

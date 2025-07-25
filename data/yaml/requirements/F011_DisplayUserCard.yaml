@@ -1,0 +1,13 @@
+id: F011
+function: DisplayUserCard
+range:
+- 194
+- 201
+args:
+- UserPtr User
+return: void
+requirement:
+  trigger: "ユーザー情報を画面に表示したいとき"
+  action: "指定されたユーザー構造体からID・氏名情報を取り出し、整形して出力する"
+  effect: "個別ユーザーの基本情報がコンソール上に見やすく表示される"
+  constraint: "引数として有効なユーザー情報が与えられている必要がある（NULLチェックなし）"

@@ -1,0 +1,30 @@
+id: F035
+function: RoomManagementMenu
+range:
+  - 643
+  - 689
+args:
+  - RoomPtr *RoomList
+return: void
+requirement:
+  trigger: ''
+  action: ''
+  effect: ''
+  constraint: ''
+code: "void RoomManagementMenu(RoomPtr *RoomList)\n{\n  int Choice = 0;\n  do\n  {\n\
+  \    system(\"cls\");\n    printf(\"\\n---------------------------------------------\\\
+  n\");\n    printf(\"\\t   Room Management Menu\");\n    printf(\"\\n---------------------------------------------\\\
+  n\");\n    printf(\"  [1] Add New Room.\");\n    printf(\"\\n  [2] Search by Name.\"\
+  );\n    printf(\"\\n  [3] Search by ID.\");\n    printf(\"\\n  [4] Display Rooms.\"\
+  );\n    printf(\"\\n  [5] Delete Room.\");\n    printf(\"\\n  [6] Check is Room
+  Availabe.\");\n    printf(\"\\n  [7] Main Menu.\");\n    printf(\"\\n---------------------------------------------\\\
+  n\");\n    printf(\" - Please enter your choice: \");\n    Choice = ReadIntBetween(1,
+  7);\n    switch (Choice)\n    {\n    case 1:\n      AddNewRoomScreen(RoomList);\n\
+  \      break;\n    case 2:\n      SearchRoomByNameScreen(*RoomList);\n      break;\n\
+  \    case 3:\n      SearchRoomByIDScreen(*RoomList);\n      break;\n    case 4:\n\
+  \      DisplayRoomListScreen(*RoomList);\n      break;\n    case 5:\n      DeleteRoomScreen(RoomList);\n\
+  \      break;\n    case 6:\n      CheckRoomAvailabilityScreen(*RoomList);\n    \
+  \  break;\n    case 7:\n      break;\n    default:\n      printf(\"\\nError!\");\n\
+  \      break;\n    }\n  } while (Choice != 7);\n}\n"
+description: 
+  この関数は、部屋の管理メニューを表示し、ユーザーの選択に応じて新しい部屋の追加、名前やIDによる検索、部屋一覧の表示、部屋の削除、部屋の空き状況の確認を行う機能を提供します。ユーザーがメインメニューを選択するまでループを続けます。

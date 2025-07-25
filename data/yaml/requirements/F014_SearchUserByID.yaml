@@ -1,0 +1,15 @@
+id: F014
+function: SearchUserByID
+range:
+- 229
+- 240
+args:
+- UserPtr UserList
+- int ID
+return: UserPtr
+requirement:
+  trigger: "ユーザーIDを指定して該当ユーザーを検索したいとき"
+  action: "ユーザーリストを先頭から順に走査し、IDが一致するユーザー構造体を見つけて返す"
+  effect: "一致するユーザーが存在すればその情報を取得でき、存在しない場合は NULL が返る"
+  constraint: "ユーザーリストが空または一致しない場合は NULL を扱う前提で呼び出す必要がある"
+

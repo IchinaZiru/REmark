@@ -1,0 +1,22 @@
+id: F046
+function: SortReservationsByDate
+range:
+  - 902
+  - 921
+args:
+  - ReservationPtr ReservationList
+return: ReservationPtr
+requirement:
+  trigger: ''
+  action: ''
+  effect: ''
+  constraint: ''
+code: "ReservationPtr SortReservationsByDate(ReservationPtr ReservationList)\n{\n\
+  \  ReservationPtr current1 = ReservationList;\n  ReservationPtr current2 = NULL;\n\
+  \n  while (current1->Next != NULL)\n  {\n    current2 = current1->Next;\n    while
+  (current2 != NULL)\n    {\n      if (IsDate1BeforeDate2(current2->Date, current1->Date))\n\
+  \      {\n        SwapReservationData(current1, current2);\n      }\n      current2
+  = current2->Next;\n    }\n    current1 = current1->Next;\n  }\n  return ReservationList;\n\
+  }\n"
+description: 
+  この関数は、予約リストを日付順に並べ替えるために、リスト内の予約データを比較し、必要に応じてデータを交換することで、予約リストを昇順にソートします。

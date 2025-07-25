@@ -1,0 +1,14 @@
+id: F039
+function: ReadReservationPeriod
+range:
+- 740
+- 751
+args:
+- ReservationPtr *ReservationInfo
+- RoomPtr *Room
+return: void
+requirement:
+  trigger: "予約登録時に日付と時間帯の入力を求められたとき"
+  action: "ユーザーから予約の日付・開始時刻・終了時刻を受け取り、予約情報と部屋情報に反映させる"
+  effect: "予約情報と部屋情報に同じ日付・時間が設定され、その部屋は予約済みとしてマークされる"
+  constraint: "日付と時刻はそれぞれ ReadDate と ReadTime 関数を使って標準入力から取得すること"

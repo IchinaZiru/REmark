@@ -1,0 +1,12 @@
+id: F001
+function: PauseProgram
+range:
+- 59
+- 64
+args: []
+return: void
+requirement:
+  trigger: "ユーザーが前の処理を終え、メインメニューに戻るタイミングで実行される"
+  action: "Enterキーを押すようにユーザーに促し、その入力を待機する"
+  effect: "ユーザーの任意のタイミングでメニューに戻れるようにする"
+  constraint: "標準入力から1文字以上が入力されるまで次に進まない"

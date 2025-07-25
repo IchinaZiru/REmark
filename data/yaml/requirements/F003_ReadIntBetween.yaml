@@ -1,0 +1,14 @@
+id: F003
+function: ReadIntBetween
+range:
+- 74
+- 84
+args:
+- int from
+- int to
+return: int
+requirement:
+  trigger: "ユーザーに特定の範囲内の整数入力を求めたいとき"
+  action: "標準入力から整数値を読み取り、指定された範囲に収まるまで繰り返し再入力を求める"
+  effect: "指定された範囲内の整数値のみを安全に取得できる"
+  constraint: "ユーザーが不正な値を入力した場合はその都度再入力を促す"

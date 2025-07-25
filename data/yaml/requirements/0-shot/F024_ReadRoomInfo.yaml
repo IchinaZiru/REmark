@@ -1,0 +1,19 @@
+id: F024
+function: ReadRoomInfo
+range:
+  - 447
+  - 457
+args:
+  - RoomPtr *RoomInfo
+return: void
+requirement:
+  trigger: ''
+  action: ''
+  effect: ''
+  constraint: ''
+code: "void ReadRoomInfo(RoomPtr *RoomInfo)\n{\n  printf(\"\\nEnter Room Info:\\n--------------------------\"\
+  );\n  printf(\"\\nID: \");\n  (*RoomInfo)->ID = ReadIntBetween(0, 9999);\n  printf(\"\
+  \\nName: \");\n  scanf(\"%s\", (*RoomInfo)->Name);\n\n  (*RoomInfo)->IsReserved
+  = false;\n  (*RoomInfo)->Next = NULL;\n}\n"
+description: 
+  この関数は、ユーザーから部屋のIDと名前を入力させ、それをRoomInfo構造体に格納し、初期状態として予約されていないことを示すフラグを設定し、次の部屋情報へのポインタをNULLに初期化します。

@@ -1,0 +1,13 @@
+id: F032
+function: DisplayRoomListScreen
+range:
+- 575
+- 595
+args:
+- RoomPtr RoomList
+return: void
+requirement:
+  trigger: "ユーザーが登録されているすべての部屋を確認したいとき"
+  action: "部屋リストを走査して全ての部屋情報を順に表示する"
+  effect: "部屋一覧が画面上に分かりやすく表示され、存在しない場合は空リストであることが示される"
+  constraint: "部屋が1つも存在しない場合はエラーメッセージを表示し、ループ処理で順次表示する"

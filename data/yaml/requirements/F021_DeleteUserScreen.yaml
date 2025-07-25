@@ -1,0 +1,13 @@
+id: F021
+function: DeleteUserScreen
+range:
+- 354
+- 379
+args:
+- UserPtr *UserList
+return: void
+requirement:
+  trigger: "ユーザーを削除するための画面が開かれたとき"
+  action: "指定されたIDのユーザーを検索して表示し、確認後に削除処理を実行する"
+  effect: "ユーザーが一覧から削除され、メモリも解放される"
+  constraint: "削除は確認プロンプト（y/n）によってのみ実行され、対象が存在しない場合は警告が表示される"

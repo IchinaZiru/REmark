@@ -1,0 +1,49 @@
+﻿ID,関数名,開始行,終了行,行数,引数,戻り値
+F001,PauseProgram,59,64,6,,void
+F002,ScreenHeader,66,72,7,char Title[MAX_STRING_SIZE],void
+F003,ReadIntBetween,74,84,11,"int from, int to",int
+F004,ReadDate,86,92,7,char Message[MAX_STRING_SIZE],stDate
+F005,ReadTime,94,100,7,char Message[MAX_STRING_SIZE],stTime
+F006,IsDate1BeforeDate2,102,117,16,"stDate Date1, stDate Date2",bool
+F007,IsTime1BeforeTime2,119,129,11,"stTime Time1, stTime Time2",bool
+F008,ExitScreen,135,144,10,,void
+F009,MainMenu,146,185,40,,void
+F010,main,187,191,5,,int
+F011,DisplayUserCard,194,201,8,UserPtr User,void
+F012,ReadUserInfo,203,213,11,UserPtr *UserInfo,void
+F013,SearchUserByFirstName,215,227,13,"UserPtr UserList, char FirstName[MAX_STRING_SIZE], bool *IsExist",void
+F014,SearchUserByID,229,240,12,"UserPtr UserList, int ID",UserPtr
+F015,AddNewUser,242,256,15,"UserPtr UserList, UserPtr NewUser",UserPtr
+F016,DeleteUserByID,258,276,19,"UserPtr UserList, int ID",UserPtr
+F017,AddNewUserScreen,278,296,19,UserPtr *UserList,void
+F018,SearchUserByFirstNameScreen,298,313,16,UserPtr UserList,void
+F019,SearchUserByIDScreen,315,330,16,UserPtr UserList,void
+F020,DisplayUserListScreen,332,352,21,UserPtr UserList,void
+F021,DeleteUserScreen,354,379,26,UserPtr *UserList,void
+F022,UserManagementMenu,381,422,42,UserPtr *UserList,void
+F023,DisplayRoomCard,426,445,20,RoomPtr Room,void
+F024,ReadRoomInfo,447,457,11,RoomPtr *RoomInfo,void
+F025,SearchRoomByID,459,470,12,"RoomPtr RoomList, int ID",RoomPtr
+F026,AddNewRoom,472,486,15,"RoomPtr RoomList, RoomPtr NewRoom",RoomPtr
+F027,SearchRoomByName,488,500,13,"RoomPtr RoomList, char Name[MAX_STRING_SIZE], bool *IsExist",void
+F028,DeleteRoomByID,502,520,19,"RoomPtr RoomList, int ID",RoomPtr
+F029,AddNewRoomScreen,522,538,17,RoomPtr *RoomList,void
+F030,SearchRoomByNameScreen,540,556,17,RoomPtr RoomList,void
+F031,SearchRoomByIDScreen,558,573,16,RoomPtr RoomList,void
+F032,DisplayRoomListScreen,575,595,21,RoomPtr RoomList,void
+F033,DeleteRoomScreen,597,620,24,RoomPtr *RoomList,void
+F034,CheckRoomAvailabilityScreen,622,641,20,RoomPtr RoomList,void
+F035,RoomManagementMenu,643,689,47,RoomPtr *RoomList,void
+F036,DisplayReservationCard,693,705,13,ReservationPtr Reservation,void
+F037,SearchReservationByID,707,718,12,"ReservationPtr ReservationList, int ID",ReservationPtr
+F038,DeleteReservationByID,720,738,19,"ReservationPtr ReservationList, int ID",ReservationPtr
+F039,ReadReservationPeriod,740,751,12,"ReservationPtr *ReservationInfo, RoomPtr *Room",void
+F040,ReadReservationInfo,753,788,36,"ReservationPtr ReservationList, ReservationPtr *ReservationInfo, UserPtr UserList, RoomPtr *RoomList",void
+F041,AddNewReservation,790,804,15,"ReservationPtr ReservationList, ReservationPtr NewReservation",ReservationPtr
+F042,AddNewReservationScreen,806,817,12,"ReservationPtr *ReservationList, UserPtr UserList, RoomPtr *RoomList",void
+F043,DeleteReservationScreen,819,851,33,"ReservationPtr *ReservationList, RoomPtr *RoomList",void
+F044,DisplayReservationsScreen,853,873,21,ReservationPtr ReservationList,void
+F045,SwapReservationData,875,900,26,"ReservationPtr Reservation1, ReservationPtr Reservation2",void
+F046,SortReservationsByDate,902,921,20,ReservationPtr ReservationList,ReservationPtr
+F047,SortReservationsByDateScreen,923,937,15,ReservationPtr *ReservationList,void
+F048,ReservationManagementMenu,939,977,39,"ReservationPtr *ReservationList, UserPtr UserList, RoomPtr *RoomList",void

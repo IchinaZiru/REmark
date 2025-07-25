@@ -1,0 +1,28 @@
+id: F043
+function: DeleteReservationScreen
+range:
+  - 819
+  - 851
+args:
+  - ReservationPtr *ReservationList
+  - RoomPtr *RoomList
+return: void
+requirement:
+  trigger: ''
+  action: ''
+  effect: ''
+  constraint: ''
+code: "void DeleteReservationScreen(ReservationPtr *ReservationList, RoomPtr *RoomList)\n\
+  {\n  ScreenHeader(\"\\tDelete Reservation\");\n\n  int ID;\n  ReservationPtr Reservation;\n\
+  \  printf(\"\\nPlease enter ID: \");\n  ID = ReadIntBetween(0, 9999);\n\n  if ((Reservation
+  = SearchReservationByID(*ReservationList, ID)) != NULL)\n  {\n    DisplayReservationCard(Reservation);\n\
+  \    char Choice = 'n';\n    printf(\"\\nAre you sure you want to delete this reservation?
+  y/n? \");\n    scanf(\" %c\", &Choice);\n    if (Choice == 'y')\n    {\n      //
+  Delete Room Reseration\n      RoomPtr Room = SearchRoomByID(*RoomList, Reservation->RoomID);\n\
+  \      Room->IsReserved = false;\n      Room->Date = (stDate){0, 0, 0};\n      Room->Start_Time
+  = (stTime){0, 0};\n      Room->End_Time = (stTime){0, 0};\n\n      *ReservationList
+  = DeleteReservationByID(*ReservationList, ID);\n      printf(\"\\nReservation with
+  ID [%d] deleted successfully!\\n\", ID);\n    }\n  }\n  else\n    printf(\"\\nReservation
+  with ID [%d] not found!\\n\", ID);\n\n  PauseProgram();\n}\n"
+description: 
+  この関数は、ユーザーに予約IDを入力させ、そのIDに対応する予約が存在する場合は詳細を表示し、ユーザーの確認を得た上でその予約を削除し、関連する部屋の予約状態を更新します。予約が見つからない場合はその旨を通知します。

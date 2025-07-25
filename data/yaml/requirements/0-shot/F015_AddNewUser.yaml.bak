@@ -1,0 +1,21 @@
+!!omap
+  - id: F015
+  - function: AddNewUser
+  - range:
+      - 242
+      - 256
+  - args:
+      - UserPtr UserList
+      - UserPtr NewUser
+  - return: UserPtr
+  - requirement: !!omap
+      - trigger: ''
+      - action: ''
+      - effect: ''
+      - constraint: ''
+  - code: "UserPtr AddNewUser(UserPtr UserList, UserPtr NewUser)\n{\n  if (UserList
+      == NULL)\n  {\n    return NewUser;\n  }\n\n  UserPtr current = UserList;\n \
+      \ while (current->Next != NULL)\n  {\n    current = current->Next;\n  }\n  current->Next
+      = NewUser;\n  return UserList;\n}\n"
+  - description: 
+      この関数は、新しいユーザーを既存のユーザーリストの末尾に追加し、更新されたユーザーリストを返します。ユーザーリストが空の場合は、新しいユーザーをリストの先頭として設定します。

@@ -1,0 +1,32 @@
+id: F048
+function: ReservationManagementMenu
+range:
+  - 939
+  - 977
+args:
+  - ReservationPtr *ReservationList
+  - UserPtr UserList
+  - RoomPtr *RoomList
+return: void
+requirement:
+  trigger: ''
+  action: ''
+  effect: ''
+  constraint: ''
+code: "void ReservationManagementMenu(ReservationPtr *ReservationList, UserPtr UserList,
+  RoomPtr *RoomList)\n{\n  int Choice = 0;\n  do\n  {\n    system(\"cls\");\n    printf(\"\
+  \\n---------------------------------------------\\n\");\n    printf(\"\\t Reservation
+  Management Menu\");\n    printf(\"\\n---------------------------------------------\\\
+  n\");\n    printf(\"  [1] Add New Reservation.\");\n    printf(\"\\n  [2] Delete
+  Reservation.\");\n    printf(\"\\n  [3] Display Reservations.\");\n    printf(\"\
+  \\n  [4] Sort by Date.\");\n    printf(\"\\n  [5] Main Menu.\");\n    printf(\"\\\
+  n---------------------------------------------\\n\");\n    printf(\" - Please enter
+  your choice: \");\n    Choice = ReadIntBetween(1, 5);\n    switch (Choice)\n   \
+  \ {\n    case 1:\n      AddNewReservationScreen(ReservationList, UserList, RoomList);\n\
+  \      break;\n    case 2:\n      DeleteReservationScreen(ReservationList, RoomList);\n\
+  \      break;\n    case 3:\n      DisplayReservationsScreen(*ReservationList);\n\
+  \      break;\n    case 4:\n      SortReservationsByDateScreen(ReservationList);\n\
+  \      break;\n    case 5:\n      break;\n    default:\n      printf(\"\\nError!\"\
+  );\n      break;\n    }\n  } while (Choice != 5);\n}"
+description: 
+  この関数は、予約管理メニューを表示し、ユーザーの選択に応じて新規予約の追加、予約の削除、予約一覧の表示、予約の日時順ソートを行う機能を提供します。

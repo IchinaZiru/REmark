@@ -1,0 +1,29 @@
+id: F022
+function: UserManagementMenu
+range:
+  - 381
+  - 422
+args:
+  - UserPtr *UserList
+return: void
+requirement:
+  trigger: ''
+  action: ''
+  effect: ''
+  constraint: ''
+code: "void UserManagementMenu(UserPtr *UserList)\n{\n  int Choice = 0;\n  do\n  {\n\
+  \    system(\"cls\");\n    printf(\"\\n---------------------------------------------\\\
+  n\");\n    printf(\"\\t   User Management Menu\");\n    printf(\"\\n---------------------------------------------\\\
+  n\");\n    printf(\"  [1] Add New User.\");\n    printf(\"\\n  [2] Search by First
+  Name.\");\n    printf(\"\\n  [3] Search by ID.\");\n    printf(\"\\n  [4] Display
+  Users.\");\n    printf(\"\\n  [5] Delete User.\");\n    printf(\"\\n  [6] Main Menu.\"\
+  );\n    printf(\"\\n---------------------------------------------\\n\");\n    printf(\"\
+  \ - Please enter your choice: \");\n    Choice = ReadIntBetween(1, 6);\n    switch
+  (Choice)\n    {\n    case 1:\n      AddNewUserScreen(UserList);\n      break;\n\
+  \    case 2:\n      SearchUserByFirstNameScreen(*UserList);\n      break;\n    case
+  3:\n      SearchUserByIDScreen(*UserList);\n      break;\n    case 4:\n      DisplayUserListScreen(*UserList);\n\
+  \      break;\n    case 5:\n      DeleteUserScreen(UserList);\n    case 6:\n   \
+  \   break;\n    default:\n      printf(\"\\nError!\");\n      break;\n    }\n  }
+  while (Choice != 6);\n}\n"
+description: 
+  この関数は、ユーザー管理メニューを表示し、ユーザーの追加、名前やIDによる検索、ユーザー一覧の表示、ユーザーの削除といった操作を選択して実行できるインターフェースを提供します。ユーザーが「メインメニュー」を選択するまでループを続けます。

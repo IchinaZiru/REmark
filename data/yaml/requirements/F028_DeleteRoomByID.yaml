@@ -1,0 +1,14 @@
+id: F028
+function: DeleteRoomByID
+range:
+- 502
+- 520
+args:
+- RoomPtr RoomList
+- int ID
+return: RoomPtr
+requirement:
+  trigger: "指定されたIDの部屋をリストから削除する必要があるとき"
+  action: "部屋リストを走査し、該当するIDのノードを削除してリスト構造を更新する"
+  effect: "該当の部屋がリストから安全に取り除かれ、リスト構造が維持される"
+  constraint: "対象が先頭ノードか中間ノードかで処理を分岐し、見つからない場合は何もしない"

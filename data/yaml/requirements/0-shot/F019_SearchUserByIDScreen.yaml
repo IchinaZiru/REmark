@@ -1,0 +1,20 @@
+id: F019
+function: SearchUserByIDScreen
+range:
+  - 315
+  - 330
+args:
+  - UserPtr UserList
+return: void
+requirement:
+  trigger: ''
+  action: ''
+  effect: ''
+  constraint: ''
+code: "void SearchUserByIDScreen(UserPtr UserList)\n{\n  ScreenHeader(\"\\tSearch
+  By ID\");\n  int ID;\n  printf(\"\\nPlease enter ID: \");\n  ID = ReadIntBetween(0,
+  9999);\n\n  UserPtr User = SearchUserByID(UserList, ID);\n  if (User == NULL)\n\
+  \    printf(\"\\nUser not Found!\\n\");\n  else\n  {\n    DisplayUserCard(User);\n\
+  \  }\n  PauseProgram();\n}\n"
+description: 
+  この関数は、ユーザーリストから指定されたIDのユーザーを検索し、見つかった場合はそのユーザーの情報を表示し、見つからなかった場合は「ユーザーが見つからない」と表示します。

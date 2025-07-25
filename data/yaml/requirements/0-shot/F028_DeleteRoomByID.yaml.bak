@@ -1,0 +1,21 @@
+!!omap
+  - id: F028
+  - function: DeleteRoomByID
+  - range:
+      - 502
+      - 520
+  - args:
+      - RoomPtr RoomList
+      - int ID
+  - return: RoomPtr
+  - requirement: !!omap
+      - trigger: ''
+      - action: ''
+      - effect: ''
+      - constraint: ''
+  - code: "RoomPtr DeleteRoomByID(RoomPtr RoomList, int ID)\n{\n  RoomPtr current
+      = RoomList;\n  RoomPtr previous = NULL;\n\n  while (current != NULL && current->ID
+      != ID)\n  {\n    previous = current;\n    current = current->Next;\n  }\n\n\
+      \  if (previous == NULL)\n    RoomList = current->Next;\n  else\n    previous->Next
+      = current->Next;\n\n  free(current);\n  return RoomList;\n}\n"
+  - description: 指定されたIDを持つ部屋をリンクリストから削除し、更新されたリストを返す関数です。

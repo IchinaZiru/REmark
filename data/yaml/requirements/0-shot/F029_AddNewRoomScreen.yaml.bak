@@ -1,0 +1,22 @@
+!!omap
+  - id: F029
+  - function: AddNewRoomScreen
+  - range:
+      - 522
+      - 538
+  - args:
+      - RoomPtr *RoomList
+  - return: void
+  - requirement: !!omap
+      - trigger: ''
+      - action: ''
+      - effect: ''
+      - constraint: ''
+  - code: "void AddNewRoomScreen(RoomPtr *RoomList)\n{\n  ScreenHeader(\"\\tAdd New
+      Room\");\n\n  RoomPtr NewRoom = (Room *)malloc(sizeof(Room));\n  ReadRoomInfo(&NewRoom);\n\
+      \n  if (SearchRoomByID(*RoomList, NewRoom->ID) == NULL)\n  {\n    *RoomList
+      = AddNewRoom(*RoomList, NewRoom);\n    printf(\"\\nRoom Added Successfully!\\\
+      n\");\n  }\n  else\n    printf(\"\\nRoom with ID [%d] already exist!\\n\", NewRoom->ID);\n\
+      \n  PauseProgram();\n}\n"
+  - description: 
+      この関数は、新しい部屋の情報を入力し、既存のリストに同じIDの部屋が存在しない場合にその部屋を追加する機能を提供します。既に同じIDの部屋が存在する場合は、追加せずにその旨を表示します。

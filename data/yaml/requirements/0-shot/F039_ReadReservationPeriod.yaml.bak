@@ -1,0 +1,23 @@
+!!omap
+  - id: F039
+  - function: ReadReservationPeriod
+  - range:
+      - 740
+      - 751
+  - args:
+      - ReservationPtr *ReservationInfo
+      - RoomPtr *Room
+  - return: void
+  - requirement: !!omap
+      - trigger: ''
+      - action: ''
+      - effect: ''
+      - constraint: ''
+  - code: "void ReadReservationPeriod(ReservationPtr *ReservationInfo, RoomPtr *Room)\n\
+      {\n  printf(\"\\nEnter Reservation Date & Time:\");\n  (*ReservationInfo)->Date
+      = ReadDate(\" => Date [Day Month Year]: \");\n  (*ReservationInfo)->Start_Time
+      = ReadTime(\" => Start Time [Hour Minute]: \");\n  (*ReservationInfo)->End_Time
+      = ReadTime(\" => End Time [Hour Minute]: \");\n\n  (*Room)->Date = (*ReservationInfo)->Date;\n\
+      \  (*Room)->Start_Time = (*ReservationInfo)->Start_Time;\n  (*Room)->End_Time
+      = (*ReservationInfo)->End_Time;\n  (*Room)->IsReserved = true;\n}\n"
+  - description: この関数は、予約情報を入力し、その情報を指定された予約構造体と部屋構造体に格納して、部屋の予約状態を更新します。

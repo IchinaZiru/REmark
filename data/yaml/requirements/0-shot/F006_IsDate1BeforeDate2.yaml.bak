@@ -1,0 +1,21 @@
+!!omap
+  - id: F006
+  - function: IsDate1BeforeDate2
+  - range:
+      - 102
+      - 117
+  - args:
+      - stDate Date1
+      - stDate Date2
+  - return: bool
+  - requirement: !!omap
+      - trigger: ''
+      - action: ''
+      - effect: ''
+      - constraint: ''
+  - code: "bool IsDate1BeforeDate2(stDate Date1, stDate Date2)\n{\n  if (Date1.Year
+      < Date2.Year)\n    return true;\n  else if (Date1.Year == Date2.Year)\n  {\n\
+      \    if (Date1.Month < Date2.Month)\n      return true;\n    else if (Date1.Month
+      == Date2.Month)\n    {\n      if (Date1.Day < Date2.Day)\n        return true;\n\
+      \    }\n  }\n  return false;\n}\n"
+  - description: この関数は、2つの日付を比較し、最初の日付が2番目の日付よりも前であるかどうかを判定します。

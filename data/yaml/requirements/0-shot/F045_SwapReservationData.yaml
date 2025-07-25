@@ -1,0 +1,26 @@
+id: F045
+function: SwapReservationData
+range:
+  - 875
+  - 900
+args:
+  - ReservationPtr Reservation1
+  - ReservationPtr Reservation2
+return: void
+requirement:
+  trigger: ''
+  action: ''
+  effect: ''
+  constraint: ''
+code: "void SwapReservationData(ReservationPtr Reservation1, ReservationPtr Reservation2)\n\
+  {\n  int tmpID = Reservation1->ID;\n  int tmpUserID = Reservation1->UserID;\n  int
+  tmpRoomID = Reservation1->RoomID;\n\n  stDate tmpDate = Reservation1->Date;\n  stTime
+  tmpStart_Time = Reservation1->Start_Time;\n  stTime tmpEnd_Time = Reservation1->End_Time;\n\
+  \n  Reservation1->ID = Reservation2->ID;\n  Reservation1->UserID = Reservation2->UserID;\n\
+  \  Reservation1->RoomID = Reservation2->RoomID;\n\n  Reservation1->Date = Reservation2->Date;\n\
+  \  Reservation1->Start_Time = Reservation2->Start_Time;\n  Reservation1->End_Time
+  = Reservation2->End_Time;\n\n  Reservation2->ID = tmpID;\n  Reservation2->UserID
+  = tmpUserID;\n  Reservation2->RoomID = tmpRoomID;\n\n  Reservation2->Date = tmpDate;\n\
+  \  Reservation2->Start_Time = tmpStart_Time;\n  Reservation2->End_Time = tmpEnd_Time;\n\
+  }\n"
+description: この関数は、2つの予約データ構造体の全てのフィールドを入れ替えることで、予約情報を交換します。

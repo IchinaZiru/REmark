@@ -1,0 +1,25 @@
+!!omap
+  - id: F021
+  - function: DeleteUserScreen
+  - range:
+      - 354
+      - 379
+  - args:
+      - UserPtr *UserList
+  - return: void
+  - requirement: !!omap
+      - trigger: ''
+      - action: ''
+      - effect: ''
+      - constraint: ''
+  - code: "void DeleteUserScreen(UserPtr *UserList)\n{\n  ScreenHeader(\"\\tDelete
+      User\");\n\n  int ID;\n  printf(\"\\nPlease enter ID: \");\n  ID = ReadIntBetween(0,
+      9999);\n\n  UserPtr User = SearchUserByID(*UserList, ID);\n  if (User != NULL)\n\
+      \  {\n    DisplayUserCard(User);\n    char Choice = 'n';\n    printf(\"\\n\\
+      nAre you sure you want to delete this user? y/n? \");\n    scanf(\" %c\", &Choice);\n\
+      \    if (Choice == 'y')\n    {\n      *UserList = DeleteUserByID(*UserList,
+      ID);\n      printf(\"\\nUser with ID [%d] deleted successfully!\\n\", ID);\n\
+      \    }\n  }\n  else\n    printf(\"\\nUser wiht ID [%d] not found!\\n\", ID);\n\
+      \n  PauseProgram();\n}\n"
+  - description: 
+      この関数は、ユーザーIDを入力して該当するユーザーを検索し、確認後にそのユーザーを削除する処理を行います。ユーザーが見つからない場合はエラーメッセージを表示し、削除が成功した場合は成功メッセージを表示します。

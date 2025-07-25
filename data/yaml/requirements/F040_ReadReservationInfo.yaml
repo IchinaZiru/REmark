@@ -1,0 +1,26 @@
+id: F040
+function: ReadReservationInfo
+range:
+- 753
+- 788
+args:
+- ReservationPtr ReservationList
+- ReservationPtr *ReservationInfo
+- UserPtr UserList
+- RoomPtr *RoomList
+return: void
+requirement:
+  trigger: "新しい予約を作成する際に、予約者・部屋・予約時間を指定したいとき"
+  action: |
+    ユーザーから予約ID、ユーザーID、部屋IDを標準入力で受け取り、
+    ・予約IDが重複していないか
+    ・ユーザーIDが存在するか
+    ・部屋IDが存在し、かつ予約済みでないか
+    をそれぞれ検証する。すべて条件を満たせば、予約日時情報を読み取って予約情報構造体に格納する。
+  effect: |
+    新しい予約が有効な状態で初期化され、予約対象の部屋も該当日時で予約済みとされる。
+  constraint: |
+    ・予約IDは重複不可  
+    ・ユーザーIDは既存ユーザーに属する必要あり  
+    ・部屋IDは存在し、未予約状態でなければならない  
+    ・予約日時は `ReadReservationPeriod` を通じて入力される

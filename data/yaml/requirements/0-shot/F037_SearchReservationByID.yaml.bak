@@ -1,0 +1,21 @@
+!!omap
+  - id: F037
+  - function: SearchReservationByID
+  - range:
+      - 707
+      - 718
+  - args:
+      - ReservationPtr ReservationList
+      - int ID
+  - return: ReservationPtr
+  - requirement: !!omap
+      - trigger: ''
+      - action: ''
+      - effect: ''
+      - constraint: ''
+  - code: "ReservationPtr SearchReservationByID(ReservationPtr ReservationList, int
+      ID)\n{\n  ReservationPtr current = ReservationList;\n  while (current != NULL)\n\
+      \  {\n    if (current->ID == ID)\n      return current;\n\n    current = current->Next;\n\
+      \  }\n  return NULL;\n}\n"
+  - description: 
+      与えられた予約リストから指定されたIDを持つ予約を検索し、見つかった場合はその予約へのポインタを返します。見つからない場合はNULLを返します。

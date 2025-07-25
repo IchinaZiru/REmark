@@ -1,0 +1,13 @@
+id: F029
+function: AddNewRoomScreen
+range:
+- 522
+- 538
+args:
+- RoomPtr *RoomList
+return: void
+requirement:
+  trigger: "ユーザーが新しい部屋の追加画面を開いたとき"
+  action: "部屋情報を入力させ、重複IDがなければ部屋リストに追加し、結果を表示する"
+  effect: "新しい部屋が部屋リストに正しく追加される（または重複エラーが通知される）"
+  constraint: "部屋IDの重複を事前にチェックし、既存IDがある場合は追加を行わない"
