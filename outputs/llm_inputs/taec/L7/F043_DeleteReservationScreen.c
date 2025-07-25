@@ -1,0 +1,40 @@
+// [Logical] この関数は、予約リストから指定されたIDの予約を削除するためのものです。
+// [Precise] ユーザーに予約IDを入力させ、そのIDに基づいて予約を検索し、確認後に削除します。
+// [Unambiguous] 予約IDを入力し、存在する場合は削除確認を行い、ユーザーが承認した場合に削除を実行します。
+// [Exhaustive] 予約が見つかった場合は削除し、成功メッセージを表示しますが、見つからない場合はエラーメッセージを表示します。
+// [Troubleshooting] 予約が見つからない場合は、エラーメッセージを表示して処理を終了します。
+// [Contextualizing] この関数は、予約管理システム内で予約を削除する際に使用されます。
+// [Condensing] 指定されたIDの予約を削除し、成功または失敗のメッセージを表示します。
+void DeleteReservationScreen(ReservationPtr *ReservationList, RoomPtr *RoomList)
+{
+  ScreenHeader("\tDelete Reservation");
+
+  int ID;
+  ReservationPtr Reservation;
+  printf("\nPlease enter ID: ");
+  ID = ReadIntBetween(0, 9999);
+
+  if ((Reservation = SearchReservationByID(*ReservationList, ID)) != NULL)
+  {
+    DisplayReservationCard(Reservation);
+    char Choice = 'n';
+    printf("\nAre you sure you want to delete this reservation? y/n? ");
+    scanf(" %c", &Choice);
+    if (Choice == 'y')
+    {
+      // Delete Room Reseration
+      RoomPtr Room = SearchRoomByID(*RoomList, Reservation->RoomID);
+      Room->IsReserved = false;
+      Room->Date = (stDate){0, 0, 0};
+      Room->Start_Time = (stTime){0, 0};
+      Room->End_Time = (stTime){0, 0};
+
+      *ReservationList = DeleteReservationByID(*ReservationList, ID);
+      printf("\nReservation with ID [%d] deleted successfully!\n", ID);
+    }
+  }
+  else
+    printf("\nReservation with ID [%d] not found!\n", ID);
+
+  PauseProgram();
+}

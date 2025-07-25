@@ -1,0 +1,42 @@
+void UserManagementMenu(UserPtr *UserList)
+{
+  int Choice = 0;
+  do
+  {
+    system("cls");
+    printf("\n---------------------------------------------\n");
+    printf("\t   User Management Menu");
+    printf("\n---------------------------------------------\n");
+    printf("  [1] Add New User.");
+    printf("\n  [2] Search by First Name.");
+    printf("\n  [3] Search by ID.");
+    printf("\n  [4] Display Users.");
+    printf("\n  [5] Delete User.");
+    printf("\n  [6] Main Menu.");
+    printf("\n---------------------------------------------\n");
+    printf(" - Please enter your choice: ");
+    Choice = ReadIntBetween(1, 6);
+    switch (Choice)
+    {
+    case 1:
+      AddNewUserScreen(UserList);
+      break;
+    case 2:
+      SearchUserByFirstNameScreen(*UserList);
+      break;
+    case 3:
+      SearchUserByIDScreen(*UserList);
+      break;
+    case 4:
+      DisplayUserListScreen(*UserList);
+      break;
+    case 5:
+      DeleteUserScreen(UserList);
+    case 6:
+      break;
+    default:
+      printf("\nError!");
+      break;
+    }
+  } while (Choice != 6);
+}

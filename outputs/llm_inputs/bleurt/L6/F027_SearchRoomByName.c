@@ -1,0 +1,19 @@
+// [Logical] この関数は、指定された名前に一致する部屋をリストから検索し、見つかった場合にその情報を表示します。
+// [Precise] 部屋のリストを順に走査し、名前が一致する部屋を見つけると、その部屋の情報を表示し、存在フラグを真に設定します。
+// [Unambiguous] 部屋の名前が一致した場合にのみ情報を表示し、フラグを更新します。
+// [Exhaustive] 一致する部屋が見つかるとその情報を表示し、フラグを真に設定しますが、見つからない場合は何も表示せず、フラグは変更されません。
+// [Troubleshooting] エラー処理は実装されておらず、部屋のリストがNULLの場合は何も行いません。
+// [Contextualizing] この関数は、部屋の情報を管理するシステムなどで、特定の部屋を検索する際に使用されます。
+void SearchRoomByName(RoomPtr RoomList, char Name[MAX_STRING_SIZE], bool *IsExist)
+{
+  RoomPtr current = RoomList;
+  while (current != NULL)
+  {
+    if (strcmp(current->Name, Name) == 0)
+    {
+      DisplayRoomCard(current);
+      *IsExist = true;
+    }
+    current = current->Next;
+  }
+}
