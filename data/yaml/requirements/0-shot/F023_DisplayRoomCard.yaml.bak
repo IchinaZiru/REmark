@@ -1,0 +1,24 @@
+!!omap
+  - id: F023
+  - function: DisplayRoomCard
+  - range:
+      - 426
+      - 445
+  - args:
+      - RoomPtr Room
+  - return: void
+  - requirement: !!omap
+      - trigger: ''
+      - action: ''
+      - effect: ''
+      - constraint: ''
+  - code: "void DisplayRoomCard(RoomPtr Room)\n{\n  printf(\"\\n______________________________\\\
+      n\");\n  printf(\" - ID: %d\", Room->ID);\n  printf(\"\\n - Name: %s\", Room->Name);\n\
+      \  if (Room->IsReserved == true)\n  {\n    printf(\"\\n - Reserved : Yes\");\n\
+      \    printf(\"\\n    => Date: %02d/%02d/%d\",\n           Room->Date.Day, Room->Date.Month,
+      Room->Date.Year);\n    printf(\"\\n    => Time: %02d:%02d - %02d:%02d\",\n \
+      \          Room->Start_Time.Hour, Room->Start_Time.Minute,\n           Room->End_Time.Hour,
+      Room->End_Time.Minute);\n  }\n  else\n  {\n    printf(\"\\n - Reserved : No\"\
+      );\n  }\n  printf(\"\\n______________________________\\n\");\n}\n"
+  - description: 
+      この関数は、指定された部屋のID、名前、予約状況、および予約されている場合はその日付と時間をフォーマットしてコンソールに表示します。

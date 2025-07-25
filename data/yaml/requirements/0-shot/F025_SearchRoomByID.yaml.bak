@@ -1,0 +1,21 @@
+!!omap
+  - id: F025
+  - function: SearchRoomByID
+  - range:
+      - 459
+      - 470
+  - args:
+      - RoomPtr RoomList
+      - int ID
+  - return: RoomPtr
+  - requirement: !!omap
+      - trigger: ''
+      - action: ''
+      - effect: ''
+      - constraint: ''
+  - code: "RoomPtr SearchRoomByID(RoomPtr RoomList, int ID)\n{\n  RoomPtr current
+      = RoomList;\n  while (current != NULL)\n  {\n    if (current->ID == ID)\n  \
+      \    return current;\n\n    current = current->Next;\n  }\n  return NULL;\n\
+      }\n"
+  - description: 
+      この関数は、リンクリスト形式で管理されている部屋のリストから指定されたIDを持つ部屋を検索し、その部屋のポインタを返します。指定されたIDの部屋が見つからない場合はNULLを返します。

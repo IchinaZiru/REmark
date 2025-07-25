@@ -1,0 +1,19 @@
+id: F003
+function: ReadIntBetween
+range:
+  - 74
+  - 84
+args:
+  - int from
+  - int to
+return: int
+requirement:
+  trigger: ''
+  action: ''
+  effect: ''
+  constraint: ''
+code: "int ReadIntBetween(int from, int to)\n{\n  int choice = 0;\n  scanf(\"%d\"\
+  , &choice);\n  while (choice < from || choice > to)\n  {\n    printf(\"\\ nPlease
+  enter a number in the range [%d-%d]: \", from, to);\n    scanf(\"%d\", &choice);\n\
+  \  }\n  return choice;\n}\n"
+description: 指定された範囲内の整数をユーザーから入力させ、その値を返す関数です。範囲外の値が入力された場合は、再入力を促します。

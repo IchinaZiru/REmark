@@ -1,0 +1,21 @@
+!!omap
+  - id: F047
+  - function: SortReservationsByDateScreen
+  - range:
+      - 923
+      - 937
+  - args:
+      - ReservationPtr *ReservationList
+  - return: void
+  - requirement: !!omap
+      - trigger: ''
+      - action: ''
+      - effect: ''
+      - constraint: ''
+  - code: "void SortReservationsByDateScreen(ReservationPtr *ReservationList)\n{\n\
+      \  ScreenHeader(\"  Sort Reservations By Date\");\n\n  if (*ReservationList
+      == NULL)\n  {\n    printf(\"\\nList is empty!\");\n  }\n  else\n  {\n    *ReservationList
+      = SortReservationsByDate(*ReservationList);\n    printf(\"\\nReservations Sorted
+      Successfully!\\n\");\n  }\n  PauseProgram();\n}\n"
+  - description: 
+      この関数は、予約のリストを日付順にソートし、ソートが成功したことをユーザーに通知する画面を表示します。リストが空の場合は、その旨を表示します。

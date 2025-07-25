@@ -1,0 +1,20 @@
+id: F012
+function: ReadUserInfo
+range:
+  - 203
+  - 213
+args:
+  - UserPtr *UserInfo
+return: void
+requirement:
+  trigger: ''
+  action: ''
+  effect: ''
+  constraint: ''
+code: "void ReadUserInfo(UserPtr *UserInfo)\n{\n  printf(\"\\nEnter User Info:\\n--------------------------\"\
+  );\n  printf(\"\\nID: \");\n  (*UserInfo)->ID = ReadIntBetween(0, 9999);\n  printf(\"\
+  \\nFirst Name: \");\n  scanf(\"%s\", (*UserInfo)->FirstName);\n  printf(\"\\nLast
+  Name : \");\n  scanf(\"%s\", (*UserInfo)->LastName);\n  (*UserInfo)->Next = NULL;\n\
+  }\n"
+description: 
+  この関数は、ユーザーのID、名前、姓を標準入力から取得し、指定されたユーザー情報構造体に格納します。IDは0から9999の範囲で整数として読み取られ、次のユーザー情報へのポインタはNULLに初期化されます。

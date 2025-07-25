@@ -1,0 +1,18 @@
+id: F008
+function: ExitScreen
+range:
+  - 135
+  - 144
+args: []
+return: void
+requirement:
+  trigger: ''
+  action: ''
+  effect: ''
+  constraint: ''
+code: "void ExitScreen()\n{\n  system(\"cls\");\n  printf(\"\\n\\t\\t\\t\\t\\t\\t*********************************\\\
+  n\");\n  printf(\"\\t\\t\\t\\t\\t\\t\\t   Exist Screen\");\n  printf(\"\\n\\t\\\
+  t\\t\\t\\t\\t*********************************\\n\");\n  printf(\"\\t\\t\\t\\t\\\
+  t\\t  Project Done by:\\n\");\n  printf(\"\\n\\t\\t\\t\\t\\t\\t  - Name   : Oussama
+  Azzouz\");\n  printf(\"\\n\\t\\t\\t\\t\\t\\t  - Group  : 05\\n\\n\\n\");\n}\n"
+description: この関数は、コンソール画面をクリアした後、プロジェクトの終了画面を表示し、開発者の名前とグループ番号を示します。

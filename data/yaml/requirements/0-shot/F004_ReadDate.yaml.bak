@@ -1,0 +1,19 @@
+!!omap
+  - id: F004
+  - function: ReadDate
+  - range:
+      - 86
+      - 92
+  - args:
+      - char Message[MAX_STRING_SIZE]
+  - return: stDate
+  - requirement: !!omap
+      - trigger: ''
+      - action: ''
+      - effect: ''
+      - constraint: ''
+  - code: "stDate ReadDate(char Message[MAX_STRING_SIZE])\n{\n  stDate Date;\n  printf(\"\
+      \\n%s\", Message);\n  scanf(\"%d %d %d\", &Date.Day, &Date.Month, &Date.Year);\n\
+      \  return Date;\n}\n"
+  - description: 
+      ユーザーに日付入力を促すメッセージを表示し、入力された日、月、年をそれぞれ整数として読み取り、stDate構造体に格納して返す関数です。

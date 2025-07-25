@@ -1,0 +1,21 @@
+id: F013
+function: SearchUserByFirstName
+range:
+  - 215
+  - 227
+args:
+  - UserPtr UserList
+  - char FirstName[MAX_STRING_SIZE]
+  - bool *IsExist
+return: void
+requirement:
+  trigger: ''
+  action: ''
+  effect: ''
+  constraint: ''
+code: "void SearchUserByFirstName(UserPtr UserList, char FirstName[MAX_STRING_SIZE],
+  bool *IsExist)\n{\n  UserPtr current = UserList;\n  while (current != NULL)\n  {\n\
+  \    if (strcmp(current->FirstName, FirstName) == 0)\n    {\n      DisplayUserCard(current);\n\
+  \      *IsExist = true;\n    }\n    current = current->Next;\n  }\n}\n"
+description: 
+  与えられたユーザーリストから指定された名前と一致するユーザーを検索し、該当するユーザーが存在する場合はそのユーザー情報を表示し、存在フラグを更新します。
