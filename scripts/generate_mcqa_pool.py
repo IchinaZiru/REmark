@@ -1,6 +1,7 @@
 import os
 import re
 import json
+import random
 import pandas as pd
 from openai import OpenAI
 from dotenv import load_dotenv
@@ -69,7 +70,7 @@ for _, row in func_df.iterrows():
 {{
   "question": "関数の目的を最も正しく説明している選択肢は？",
   "choices": ["...", "...", "...", "..."],
-  "answer_index": 0
+  "answer_index": [正しい選択肢のインデックス番号（0〜3）]
 }}
 ```
 """
@@ -89,6 +90,15 @@ for _, row in func_df.iterrows():
     if json_dict is None:
         print(f"{name} で JSON 抽出失敗\n-----\n{res.choices[0].message.content}\n-----")
         continue
+    
+    index = json_dict["answer_index"]
+    if isinstance(index, list):
+        index = index[0]
+
+    # シャッフル処理を追加
+    correct_answer = json_dict["choices"][index]
+    random.shuffle(json_dict["choices"])
+    json_dict["answer_index"] = json_dict["choices"].index(correct_answer)
 
     out_path = os.path.join(POOL_DIR, f"{name}.json")
     with open(out_path, "w", encoding="utf-8") as f:
