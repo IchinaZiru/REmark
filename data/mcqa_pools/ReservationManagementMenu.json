@@ -1,10 +1,10 @@
 {
   "question": "関数の目的を最も正しく説明している選択肢は？",
   "choices": [
-    "ReservationManagementMenu 関数は、予約の追加、削除、表示、日付によるソートを行うためのメニューを表示し、ユーザーの選択に応じて適切な処理を呼び出す。",
-    "ReservationManagementMenu 関数は、ユーザーの入力に基づいて予約を自動的に最適化し、最適な予約プランを提案する。",
-    "ReservationManagementMenu 関数は、ユーザーが予約を管理するためのグラフィカルユーザーインターフェースを提供する。",
-    "ReservationManagementMenu 関数は、予約リストを永続的に保存し、データベースに同期する機能を持つ。"
+    "ReservationManagementMenu 関数は、ユーザーリストを管理し、ユーザー情報を更新するためのメニューを表示する。",
+    "ReservationManagementMenu 関数は、予約の追加、削除、表示、日付によるソートを行うためのメニューを表示し、ユーザーの選択に応じて適切な画面を呼び出す。",
+    "ReservationManagementMenu 関数は、予約リストを自動的に更新し、すべての予約を日付順にソートする。",
+    "ReservationManagementMenu 関数は、部屋のリストを管理し、新しい部屋を追加するためのメニューを表示する。"
   ],
-  "answer_index": 0
+  "answer_index": 1
 }

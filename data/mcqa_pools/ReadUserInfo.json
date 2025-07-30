@@ -1,10 +1,10 @@
 {
   "question": "関数の目的を最も正しく説明している選択肢は？",
   "choices": [
-    "関数 `ReadUserInfo` は、ユーザーから ID、名前、苗字を入力させ、与えられた `UserPtr` 構造体にその情報を格納します。",
-    "関数 `ReadUserInfo` は、ユーザーからの入力を受け取り、ユーザー情報をデータベースに保存します。",
-    "関数 `ReadUserInfo` は、ユーザーの入力を検証し、エラーがあれば再入力を促します。",
-    "関数 `ReadUserInfo` は、ユーザー情報をファイルから読み込み、構造体に格納します。"
+    "ReadUserInfo 関数は、ユーザー情報をデータベースから取得し、UserInfo 構造体に格納する。",
+    "ReadUserInfo 関数は、ユーザー情報をファイルから読み取り、UserInfo 構造体に格納する。",
+    "ReadUserInfo 関数は、ユーザーから ID、名前、苗字を入力として受け取り、UserInfo 構造体に格納する。",
+    "ReadUserInfo 関数は、ユーザー情報をネットワーク経由で取得し、UserInfo 構造体に格納する。"
   ],
-  "answer_index": 0
+  "answer_index": 2
 }
