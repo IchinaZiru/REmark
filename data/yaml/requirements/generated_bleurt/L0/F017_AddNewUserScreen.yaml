@@ -1,0 +1,3 @@
+description: '`AddNewUserScreen` 関数は、新しいユーザー情報を入力し、ユーザーリストに追加するが、既に存在するユーザーIDの場合は追加を行わない。'
+function: AddNewUserScreen
+id: F017
