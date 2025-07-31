@@ -1,0 +1,3 @@
+description: この関数は、ユーザーに部屋の名前を入力させ、その名前に一致する部屋がリストに存在するかを検索し、結果を表示するための画面を表示します。
+function: SearchRoomByNameScreen
+id: F030
