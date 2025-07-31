@@ -1,0 +1,7 @@
+function: ReadIntBetween
+id: F003
+taec:
+  action: 入力された整数が指定された範囲内にあるかを確認する。
+  constraint: 入力された整数が指定された範囲外の場合、範囲内の整数が入力されるまで再入力を求める。
+  effect: 指定された範囲内の整数が返される。
+  trigger: ユーザーが整数を入力する。
