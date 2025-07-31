@@ -1,0 +1,3 @@
+description: '`ReadTime` 関数は、ユーザーにメッセージを表示して時刻（時間と分）を入力させ、その時刻を `stTime` 構造体として返すことを目的としています。'
+function: ReadTime
+id: F005

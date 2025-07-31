@@ -1,0 +1,3 @@
+description: この関数 `ExitScreen` は、コンソール画面をクリアし、プロジェクトの終了画面として作成者の情報を表示します。
+function: ExitScreen
+id: F008

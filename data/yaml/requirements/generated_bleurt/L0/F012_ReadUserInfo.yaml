@@ -1,0 +1,3 @@
+description: '`ReadUserInfo` 関数は、ユーザーのID、名前、苗字を入力し、`UserPtr` 構造体に格納するためのものです。'
+function: ReadUserInfo
+id: F012
