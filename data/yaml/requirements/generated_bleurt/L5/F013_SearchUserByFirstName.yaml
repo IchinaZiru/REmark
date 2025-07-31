@@ -1,0 +1,3 @@
+description: ユーザーリストを線形探索し、指定された名前と一致するユーザーを見つけた場合にその情報を表示し、フラグをtrueに設定します。
+function: SearchUserByFirstName
+id: F013
