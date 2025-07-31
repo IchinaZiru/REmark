@@ -1,0 +1,7 @@
+function: ReadReservationPeriod
+id: F039
+taec:
+  action: 入力された予約の日付と時間を予約情報と部屋情報に格納する。
+  constraint: ユーザー入力が不適切な場合、ReadDateやReadTime関数でエラー処理が行われる必要があるが、この関数内ではエラー処理は行われない。
+  effect: 部屋の予約状態が更新され、予約情報と部屋情報に同じ日付と時間が設定される。
+  trigger: ユーザーが予約の日付と開始・終了時間を入力する。
