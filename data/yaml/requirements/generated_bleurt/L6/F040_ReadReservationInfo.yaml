@@ -1,0 +1,3 @@
+description: この関数は、ユーザーから予約ID、ユーザーID、部屋IDを入力させ、既存のデータと照合して有効な情報を取得し、予約リストに新しい予約情報を追加することを目的としています。
+function: ReadReservationInfo
+id: F040
