@@ -1,0 +1,7 @@
+function: SwapReservationData
+id: F045
+taec:
+  action: 関数は、2つの予約データの各フィールドの値を一時変数を使って入れ替える。
+  constraint: 予約データは有効なポインタであり、NULLであってはならない。
+  effect: 2つの予約データの内容が完全に入れ替わる。
+  trigger: 2つの予約データを入れ替える必要があるときに関数が呼び出される。
