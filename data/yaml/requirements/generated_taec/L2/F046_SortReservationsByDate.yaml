@@ -1,0 +1,7 @@
+function: SortReservationsByDate
+id: F046
+taec:
+  action: 予約リスト内の各予約を二重ループで比較し、必要に応じてデータを入れ替える。
+  constraint: 予約リストは連結リスト形式であり、各予約の比較はIsDate1BeforeDate2関数を使用する。
+  effect: 予約リストが日付順にソートされる。
+  trigger: 予約リストが日付順にソートされていないとき。
