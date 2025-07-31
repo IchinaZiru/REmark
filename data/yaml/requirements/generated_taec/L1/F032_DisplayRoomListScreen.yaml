@@ -1,0 +1,7 @@
+function: DisplayRoomListScreen
+id: F032
+taec:
+  action: 部屋のリストを画面に表示する。
+  constraint: RoomListがNULLでない場合、各部屋の情報が順番に表示される。
+  effect: 部屋のリストが画面に表示され、リストが空の場合は「List is empty!」と表示される。
+  trigger: DisplayRoomListScreen関数が呼び出される。
