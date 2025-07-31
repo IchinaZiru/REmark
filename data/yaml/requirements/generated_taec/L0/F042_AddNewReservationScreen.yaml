@@ -1,0 +1,7 @@
+function: AddNewReservationScreen
+id: F042
+taec:
+  action: 新しい予約情報を読み取り、予約リストに追加する。
+  constraint: 予約情報の読み取りと追加は、適切なメモリ管理とユーザー入力に依存する。
+  effect: 予約リストに新しい予約が正常に追加される。
+  trigger: 新しい予約を追加するための画面が表示される。
