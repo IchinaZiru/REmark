@@ -1,0 +1,7 @@
+function: SearchUserByIDScreen
+id: F019
+taec:
+  action: ユーザーが0から9999の範囲でIDを入力する。
+  constraint: 入力されるIDは0から9999の範囲内でなければならない。
+  effect: 入力されたIDに基づいてユーザー情報が表示されるか、ユーザーが見つからない旨のメッセージが表示される。
+  trigger: ユーザーがID検索画面でIDの入力を求められる。
