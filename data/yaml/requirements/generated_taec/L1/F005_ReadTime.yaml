@@ -1,0 +1,7 @@
+function: ReadTime
+id: F005
+taec:
+  action: ユーザーが時間を入力し、関数がその入力を受け取る。
+  constraint: 入力は整数で、時間と分の2つの値を受け取る必要がある。
+  effect: 入力された時間がstTime構造体として返される。
+  trigger: ユーザーが時間の入力を求められる。
