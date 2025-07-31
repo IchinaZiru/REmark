@@ -1,0 +1,3 @@
+description: この関数は、ユーザーから予約ID、ユーザーID、部屋IDを入力させ、それらが有効であることを確認した上で予約期間を設定し、予約情報を予約リストに追加することを目的としています。
+function: ReadReservationInfo
+id: F040
