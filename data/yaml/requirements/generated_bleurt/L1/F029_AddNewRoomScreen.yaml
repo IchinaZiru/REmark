@@ -1,0 +1,3 @@
+description: この関数は、新しい部屋を追加するための画面を表示し、ユーザーが入力した部屋情報をリストに追加する機能を提供します。
+function: AddNewRoomScreen
+id: F029
