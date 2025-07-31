@@ -1,0 +1,3 @@
+description: この関数は、ユーザーに部屋の空き状況を名前またはIDで確認する方法を選択させ、その選択に基づいて適切な検索画面を表示します。
+function: CheckRoomAvailabilityScreen
+id: F034
