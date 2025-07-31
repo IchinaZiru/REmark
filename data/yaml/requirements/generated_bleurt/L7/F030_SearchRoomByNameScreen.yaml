@@ -1,0 +1,3 @@
+description: ユーザーが入力した部屋の名前を基にリスト内の部屋を検索し、見つからない場合は「Room not Found!」と表示してプログラムを一時停止する関数です。
+function: SearchRoomByNameScreen
+id: F030
