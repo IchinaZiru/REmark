@@ -1,0 +1,3 @@
+description: この関数は、ユーザーがEnterキーを押すまでプログラムを一時停止し、メインメニューに戻るよう促す機能を持っています。
+function: PauseProgram
+id: F001
