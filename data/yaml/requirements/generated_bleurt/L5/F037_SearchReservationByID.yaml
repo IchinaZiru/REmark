@@ -1,0 +1,3 @@
+description: この関数は、予約リストを線形探索して指定されたIDの予約を検索し、見つかった場合はその予約のポインタを返し、見つからない場合はNULLを返します。
+function: SearchReservationByID
+id: F037
