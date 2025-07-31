@@ -1,0 +1,3 @@
+description: ユーザーから標準入力で時と分を取得し、それをstTime構造体に格納して返す関数です。
+function: ReadTime
+id: F005
