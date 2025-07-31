@@ -1,0 +1,3 @@
+description: この関数は、新しいユーザーを既存のユーザーリストの末尾に追加し、更新されたユーザーリストを返します。
+function: AddNewUser
+id: F015
