@@ -1,0 +1,7 @@
+function: UserManagementMenu
+id: F022
+taec:
+  action: 選択された番号に応じたユーザー管理操作を実行する。
+  constraint: ユーザーの入力は1から6の範囲でなければならない。
+  effect: ユーザーの追加、検索、表示、削除が行われ、6を選ぶとメニューが終了する。
+  trigger: ユーザーがメニューから1から6の選択肢を入力したとき。
