@@ -1,0 +1,3 @@
+description: この関数は、ユーザーリストから指定された名前を持つユーザーを検索し、見つかった場合にその情報を表示し、存在フラグを更新します。
+function: SearchUserByFirstName
+id: F013
