@@ -1,0 +1,3 @@
+description: C関数 `IsDate1BeforeDate2` は、2つの日付を比較し、最初の日付が2番目の日付より前であるかどうかを判定して、その結果を真偽値で返します。
+function: ExitScreen
+id: F008
