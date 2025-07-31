@@ -1,0 +1,3 @@
+description: リンクリストから指定されたIDの部屋を削除し、そのノードのメモリを解放して更新されたリストの先頭を返す関数です。
+function: DeleteRoomByID
+id: F028
