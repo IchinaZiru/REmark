@@ -1,0 +1,3 @@
+description: '`DeleteUserByID` 関数は、指定されたIDを持つユーザーをユーザーリストから削除し、更新されたリストを返します。'
+function: DeleteUserByID
+id: F016
