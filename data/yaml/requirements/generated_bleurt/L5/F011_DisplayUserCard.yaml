@@ -1,0 +1,3 @@
+description: この関数は、ユーザー構造体の情報をフォーマットしてコンソールに表示するためのもので、ID、名前、姓を一貫したフォーマットで出力します。
+function: DisplayUserCard
+id: F011
