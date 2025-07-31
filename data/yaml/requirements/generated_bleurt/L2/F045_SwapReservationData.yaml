@@ -1,0 +1,3 @@
+description: この関数は、2つの予約データの各フィールドの値を一時変数を用いて入れ替えることで、予約データ全体を交換します。
+function: SwapReservationData
+id: F045
