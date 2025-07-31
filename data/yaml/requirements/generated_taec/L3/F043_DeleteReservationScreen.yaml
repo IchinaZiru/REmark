@@ -1,0 +1,7 @@
+function: DeleteReservationScreen
+id: F043
+taec:
+  action: 入力された予約IDに基づいて予約を検索し、存在する場合は削除確認を行う。
+  constraint: 予約IDは0から9999の範囲でなければならない。
+  effect: ユーザーが削除を承認した場合、予約が削除され、関連する部屋の予約状態が更新される。
+  trigger: ユーザーが予約IDを入力する。
