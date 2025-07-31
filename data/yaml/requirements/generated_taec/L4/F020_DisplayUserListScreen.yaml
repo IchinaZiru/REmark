@@ -1,0 +1,7 @@
+function: DisplayUserListScreen
+id: F020
+taec:
+  action: ユーザーリストがNULLかどうかを確認し、NULLの場合はリストが空であることを表示し、そうでない場合は各ユーザーを順に表示する。
+  constraint: ユーザーリストがNULLの場合は'List is empty!'を表示し、ユーザーを表示した後にプログラムを一時停止する。
+  effect: ユーザーリストが空の場合は'List is empty!'と表示され、リストが空でない場合は各ユーザーが順に表示される。
+  trigger: ユーザーリストが表示される必要があるときに関数が呼び出される。
