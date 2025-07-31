@@ -1,0 +1,7 @@
+function: SearchUserByID
+id: F014
+taec:
+  action: ユーザーリストを先頭から順に走査し、指定されたIDを持つユーザーを探す。
+  constraint: ユーザーリストがNULLでないこと、およびユーザーIDが一意であること。
+  effect: 指定されたIDを持つユーザーが見つかった場合、そのユーザーのポインタを返す。
+  trigger: ユーザーIDを検索する要求が発生したとき。
