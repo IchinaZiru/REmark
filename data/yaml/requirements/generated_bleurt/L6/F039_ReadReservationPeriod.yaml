@@ -1,0 +1,3 @@
+description: この関数は、ユーザーから予約の日付と開始・終了時間を入力させ、それを予約情報と部屋情報に設定し、部屋の予約状態を更新します。
+function: ReadReservationPeriod
+id: F039
