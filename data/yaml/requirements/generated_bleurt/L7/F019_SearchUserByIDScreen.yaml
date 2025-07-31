@@ -1,0 +1,3 @@
+description: ユーザーIDを入力してユーザーリストから該当するユーザーを検索し、見つかった場合はその情報を表示し、見つからなかった場合はエラーメッセージを表示する関数です。
+function: SearchUserByIDScreen
+id: F019
