@@ -1,0 +1,7 @@
+function: AddNewRoomScreen
+id: F029
+taec:
+  action: 新しい部屋の情報を入力し、部屋IDを検索してリストに追加する。
+  constraint: 部屋IDが既に存在する場合はリストに追加しない。
+  effect: 新しい部屋がリストに追加され、成功メッセージが表示される。
+  trigger: ユーザーが新しい部屋を追加するための画面を開くとき。
