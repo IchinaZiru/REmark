@@ -1,0 +1,7 @@
+function: ReadRoomInfo
+id: F024
+taec:
+  action: ユーザーが部屋のIDと名前を入力する。
+  constraint: 部屋のIDは0から9999の範囲でなければならない。
+  effect: 入力された部屋のIDと名前がRoomInfoに格納され、予約状態が未予約に設定される。
+  trigger: ユーザーが部屋情報の入力を求められたとき。
