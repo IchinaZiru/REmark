@@ -1,0 +1,3 @@
+description: この関数は、予約リストを日付が早い順に並べ替えるために、各予約を比較して必要に応じてデータを交換し、ソートされたリストを返します。
+function: SortReservationsByDate
+id: F046
