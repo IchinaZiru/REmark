@@ -1,0 +1,7 @@
+function: DisplayUserCard
+id: F011
+taec:
+  action: ユーザーのID、名前、苗字をフォーマットしてコンソールに出力する。
+  constraint: UserPtrが有効なユーザーデータを指している必要がある。
+  effect: ユーザーの情報がコンソールに表示され、視覚的に確認できる。
+  trigger: ユーザー情報を表示する必要があるときに関数が呼び出される。
