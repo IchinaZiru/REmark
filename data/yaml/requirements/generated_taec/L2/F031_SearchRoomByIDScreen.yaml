@@ -1,0 +1,7 @@
+function: SearchRoomByIDScreen
+id: F031
+taec:
+  action: 入力されたIDを用いて部屋リストから部屋を検索する。
+  constraint: IDは0から9999の範囲でなければならない。
+  effect: 該当する部屋が見つかった場合、その部屋の情報を表示する。
+  trigger: ユーザーが部屋のIDを入力する。
