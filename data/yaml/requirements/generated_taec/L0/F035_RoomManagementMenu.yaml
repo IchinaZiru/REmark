@@ -1,0 +1,7 @@
+function: RoomManagementMenu
+id: F035
+taec:
+  action: ユーザーに部屋管理に関する選択肢を表示し、選択された操作を実行する。
+  constraint: ユーザーの選択は1から7の範囲でなければならない。
+  effect: ユーザーは部屋の追加、検索、表示、削除、利用可能性の確認ができる。
+  trigger: ユーザーが部屋管理メニューを開くとき。
