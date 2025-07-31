@@ -1,0 +1,7 @@
+function: AddNewRoom
+id: F026
+taec:
+  action: 新しい部屋を既存の部屋リストの末尾に追加する。
+  constraint: 既存の部屋リストがNULLでない場合、リストの末尾に新しい部屋を追加する。
+  effect: 部屋リストの末尾に新しい部屋が追加される。
+  trigger: 新しい部屋を既存の部屋リストに追加する必要があるとき。
