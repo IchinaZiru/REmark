@@ -1,0 +1,7 @@
+function: DeleteRoomScreen
+id: F033
+taec:
+  action: 入力されたIDの部屋を検索し、見つかった場合は削除の確認を行う。
+  constraint: 部屋が見つからない場合はエラーメッセージが表示され、削除は行われない。
+  effect: 部屋が削除されると、削除成功メッセージが表示される。
+  trigger: ユーザーが部屋を削除するために部屋IDを入力する。
