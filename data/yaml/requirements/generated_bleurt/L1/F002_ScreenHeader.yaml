@@ -1,0 +1,3 @@
+description: この関数は、指定されたタイトルを画面のヘッダーとしてクリアしたコンソールに表示します。
+function: ScreenHeader
+id: F002
