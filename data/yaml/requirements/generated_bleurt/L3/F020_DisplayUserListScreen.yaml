@@ -1,0 +1,3 @@
+description: ユーザーリストを受け取り、リストが空またはNULLの場合はその旨を表示し、そうでない場合は各ユーザーを順に表示する関数です。
+function: DisplayUserListScreen
+id: F020
