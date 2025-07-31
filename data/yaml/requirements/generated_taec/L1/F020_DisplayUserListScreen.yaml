@@ -1,0 +1,7 @@
+function: DisplayUserListScreen
+id: F020
+taec:
+  action: ユーザーリストが空かどうかを確認し、空であればその旨を表示し、そうでなければ各ユーザーの情報を順に表示する。
+  constraint: ユーザーリストがNULLでない場合、各ユーザーの情報を表示するためにDisplayUserCard関数が呼び出される。
+  effect: ユーザーリストが画面に表示され、ユーザーがリストの内容を確認できる。
+  trigger: ユーザーリストを画面に表示する必要があるときに関数が呼び出される。
