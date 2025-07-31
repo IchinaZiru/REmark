@@ -1,0 +1,3 @@
+description: この関数は、ユーザーリストを巡回して指定されたIDを持つユーザーを見つけ出し、そのユーザーへのポインタを返すことを目的としています。
+function: SearchUserByID
+id: F014
