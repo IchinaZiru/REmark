@@ -1,0 +1,3 @@
+description: 指定されたIDの部屋をリストから検索し、ユーザーの確認を得た上で削除を実行する画面を表示する関数です。
+function: DeleteRoomScreen
+id: F033
