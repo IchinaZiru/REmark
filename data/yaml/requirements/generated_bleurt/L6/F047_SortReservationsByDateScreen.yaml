@@ -1,0 +1,3 @@
+description: この関数は、予約リストが空でない場合に日付順にソートし、結果を表示する画面を提供します。
+function: SortReservationsByDateScreen
+id: F047
