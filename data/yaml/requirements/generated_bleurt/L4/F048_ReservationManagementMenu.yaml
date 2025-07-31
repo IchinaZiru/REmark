@@ -1,0 +1,3 @@
+description: この関数は、予約管理メニューを表示し、ユーザーの選択に基づいて予約の追加、削除、表示、日付でのソートを行い、メニューを終了するまで繰り返します。
+function: ReservationManagementMenu
+id: F048
