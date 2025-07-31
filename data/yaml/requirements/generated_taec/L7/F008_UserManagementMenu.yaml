@@ -1,0 +1,7 @@
+function: UserManagementMenu
+id: F008
+taec:
+  action: 画面をクリアし、終了メッセージと作成者情報を表示する。
+  constraint: '`system(\'
+  effect: ユーザーにプロジェクトの完了を知らせる。
+  trigger: プログラムの終了時に呼び出される。
