@@ -1,0 +1,7 @@
+function: ScreenHeader
+id: F002
+taec:
+  action: 画面をクリアし、指定されたタイトルを装飾して表示する。
+  constraint: タイトルはMAX_STRING_SIZEの制限内である必要がある。
+  effect: コンソール画面にタイトルが装飾された形で表示される。
+  trigger: ScreenHeader関数が呼び出されるとき。
