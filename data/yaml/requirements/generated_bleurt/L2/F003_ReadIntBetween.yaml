@@ -1,0 +1,3 @@
+description: この関数は、ユーザーに指定された範囲内の整数を入力させ、その入力が範囲内に収まるまで再入力を促す機能を持っています。
+function: ReadIntBetween
+id: F003
