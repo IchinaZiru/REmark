@@ -1,0 +1,3 @@
+description: この関数は、予約リストを走査して指定されたIDの予約を見つけ、リストからその予約を削除します。
+function: DeleteReservationByID
+id: F038
