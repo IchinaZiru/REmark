@@ -1,0 +1,7 @@
+function: SearchReservationByID
+id: F037
+taec:
+  action: リストの先頭から順に各予約のIDを比較する。
+  constraint: 予約リストがNULLの場合やIDが見つからない場合はNULLを返すが、エラー処理は特に行わない。
+  effect: 一致する予約が見つかればそのポインタを返し、見つからなければNULLを返す。
+  trigger: 予約リストと検索したいIDが関数に渡されたとき。
