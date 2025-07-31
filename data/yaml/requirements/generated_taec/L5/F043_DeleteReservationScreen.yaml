@@ -1,0 +1,7 @@
+function: DeleteReservationScreen
+id: F043
+taec:
+  action: 入力された予約IDに基づいて予約を検索し、確認後に削除する。
+  constraint: 予約が見つからない場合はエラーメッセージを表示し、処理を終了する。
+  effect: 予約が削除され、成功メッセージが表示される。
+  trigger: ユーザーが予約IDを入力する。
