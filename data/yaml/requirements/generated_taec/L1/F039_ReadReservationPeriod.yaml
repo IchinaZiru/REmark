@@ -1,0 +1,7 @@
+function: ReadReservationPeriod
+id: F039
+taec:
+  action: ユーザーが予約日と開始時間、終了時間を入力する。
+  constraint: 予約情報と部屋情報のポインタが有効である必要がある。
+  effect: 予約情報と部屋情報に入力された予約期間が設定され、部屋が予約済みとしてマークされる。
+  trigger: ユーザーが予約日と時間を入力するよう促される。
