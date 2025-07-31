@@ -1,0 +1,7 @@
+function: ReadDate
+id: F004
+taec:
+  action: ユーザーが日付を日、月、年の順に入力する。
+  constraint: 入力は整数として日、月、年の順で行われる必要がある。
+  effect: 入力された日付がstDate構造体に格納され、関数がその構造体を返す。
+  trigger: ユーザーが日付の入力を求められるメッセージを受け取るとき。
