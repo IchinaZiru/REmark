@@ -1,0 +1,7 @@
+function: SearchUserByFirstName
+id: F013
+taec:
+  action: ユーザーリストを線形に探索し、指定された名前と一致するユーザーを探す。
+  constraint: ユーザーリストがNULLでないことを前提とする。
+  effect: 一致するユーザーが見つかった場合、その情報を表示し、フラグをtrueに設定する。
+  trigger: ユーザーリストの探索を開始する。
