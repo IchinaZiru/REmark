@@ -1,0 +1,3 @@
+description: 指定された名前に一致する部屋をリストから検索し、見つかった場合にその情報を表示して存在フラグを真に設定する関数です。
+function: SearchRoomByName
+id: F027
