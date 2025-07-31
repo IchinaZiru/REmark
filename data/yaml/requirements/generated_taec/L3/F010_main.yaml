@@ -1,0 +1,7 @@
+function: main
+id: F010
+taec:
+  action: MainMenu関数を実行します。
+  constraint: MainMenu関数の実行後に即座にプログラムを終了します。
+  effect: プログラムが終了コード0で終了します。
+  trigger: プログラムが開始されるときに呼び出されます。
