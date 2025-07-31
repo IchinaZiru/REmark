@@ -1,0 +1,7 @@
+function: ReadDate
+id: F004
+taec:
+  action: ユーザーから日付を入力として受け取る。
+  constraint: 入力は整数として日、月、年の順で受け取られる必要がある。
+  effect: 入力された日付が構造体として返される。
+  trigger: ユーザーが日付の入力を求められたとき。
