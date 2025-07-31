@@ -1,0 +1,7 @@
+function: SearchUserByFirstNameScreen
+id: F018
+taec:
+  action: 入力されたファーストネームでユーザーリストを検索する。
+  constraint: ユーザーリストの検索は、入力されたファーストネームに基づいて行われる。
+  effect: 該当するユーザーが見つからない場合は、ユーザーが見つからない旨のメッセージを表示する。
+  trigger: ユーザーがファーストネームを入力することを求められたとき。
