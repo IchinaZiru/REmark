@@ -1,0 +1,7 @@
+function: SwapReservationData
+id: F045
+taec:
+  action: 一時変数を用いて、2つの予約構造体の各フィールドの値を交換する。
+  constraint: 関数はvoid型で戻り値はなく、無効なポインタが渡された場合の動作は未定義である。
+  effect: Reservation1とReservation2の各フィールド（ID、UserID、RoomID、Date、Start_Time、End_Time）が正確に入れ替わる。
+  trigger: 2つの予約データの内容を入れ替える必要があるときに関数が呼び出される。
