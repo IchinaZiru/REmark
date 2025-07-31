@@ -1,0 +1,3 @@
+description: この関数は、リンクリストから指定されたIDの部屋を見つけて削除し、メモリを解放することを目的としています。
+function: DeleteRoomByID
+id: F028
