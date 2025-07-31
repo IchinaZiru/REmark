@@ -1,0 +1,7 @@
+function: ReadReservationPeriod
+id: F039
+taec:
+  action: 予約情報と部屋情報の構造体に入力された日付と時間を格納する。
+  constraint: 入力された日付と時間が正しい形式である必要がある。
+  effect: 部屋の予約状況が更新され、予約済みとしてマークされる。
+  trigger: ユーザーが予約の日付と時間を入力する。
