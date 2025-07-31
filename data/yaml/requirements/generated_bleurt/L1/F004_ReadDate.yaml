@@ -1,0 +1,3 @@
+description: この関数は、ユーザーから日付を入力として受け取り、その日付を構造体として返します。
+function: ReadDate
+id: F004
