@@ -1,0 +1,7 @@
+function: DisplayUserCard
+id: F011
+taec:
+  action: ユーザーのID、名前、姓をフォーマットしてコンソールに出力する。
+  constraint: 関数は戻り値を持たず、標準出力に表示することのみを行う。
+  effect: ユーザー情報が標準出力に一貫したフォーマットで表示される。
+  trigger: ユーザー構造体のポインタが関数に渡されるとき。
