@@ -1,0 +1,7 @@
+function: DisplayReservationsScreen
+id: F044
+taec:
+  action: 予約リストがNULLかどうかをチェックし、NULLでない場合は各予約を順に表示する。
+  constraint: 予約リストがNULLであるかどうかに応じて異なるメッセージを表示する必要がある。
+  effect: 予約リストがNULLの場合は'List is empty!'と表示され、NULLでない場合は各予約が番号付きで表示される。
+  trigger: 予約リストを表示する必要があるときに関数が呼び出される。
