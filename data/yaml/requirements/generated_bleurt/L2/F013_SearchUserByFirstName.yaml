@@ -1,0 +1,3 @@
+description: この関数は、ユーザーリストを線形探索して指定された名前と一致するユーザーを見つけ、その情報を表示し、見つかったことを示すフラグを設定します。
+function: SearchUserByFirstName
+id: F013
