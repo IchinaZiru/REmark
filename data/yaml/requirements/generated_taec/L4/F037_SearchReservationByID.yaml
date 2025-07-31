@@ -1,0 +1,7 @@
+function: SearchReservationByID
+id: F037
+taec:
+  action: リストの先頭から順に各予約のIDを比較する。
+  constraint: リストを線形探索し、最初に一致するIDの予約が見つかった時点で探索を終了する。
+  effect: 一致する予約が見つかればそのポインタを返し、見つからなければNULLを返す。
+  trigger: 予約リストから特定のIDの予約を検索する要求が発生したとき。
