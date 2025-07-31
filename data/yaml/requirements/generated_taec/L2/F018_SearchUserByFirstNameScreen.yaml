@@ -1,0 +1,7 @@
+function: SearchUserByFirstNameScreen
+id: F018
+taec:
+  action: ユーザーが入力した名前でユーザーリストを検索する。
+  constraint: ユーザーの名前は最大文字数が定められている。
+  effect: 指定された名前を持つユーザーが見つかれば結果を表示し、見つからなければユーザーが見つからない旨を表示する。
+  trigger: ユーザーが名前の入力を求められる。
