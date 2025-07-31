@@ -1,0 +1,3 @@
+description: この関数は、新しい部屋を既存の部屋リストの末尾に追加し、更新されたリストを返します。
+function: AddNewRoom
+id: F026
