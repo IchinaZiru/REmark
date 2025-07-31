@@ -1,0 +1,3 @@
+description: この関数は、予約管理システム内で2つの予約データの内容を正確に入れ替えるために使用されます。
+function: SwapReservationData
+id: F045
