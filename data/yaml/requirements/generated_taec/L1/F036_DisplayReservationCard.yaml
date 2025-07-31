@@ -1,0 +1,7 @@
+function: DisplayReservationCard
+id: F036
+taec:
+  action: 予約情報をフォーマットしてコンソールに表示する。
+  constraint: Reservationポインタが有効であり、必要なデータがすべて含まれていること。
+  effect: 予約情報がフォーマットされた形でコンソールに出力される。
+  trigger: 予約情報を表示する必要があるときに関数が呼び出される。
