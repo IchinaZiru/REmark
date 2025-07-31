@@ -1,0 +1,7 @@
+function: AddNewUser
+id: F015
+taec:
+  action: 新しいユーザーをユーザーリストの末尾に追加する。
+  constraint: ユーザーリストまたは新しいユーザーがNULLである場合に備えてNULLチェックを行う。
+  effect: 更新されたユーザーリストを返す。
+  trigger: 新しいユーザーを既存のユーザーリストに追加する必要があるとき。
