@@ -1,0 +1,3 @@
+description: この関数は、新しい予約を追加するための画面を表示し、ユーザーと部屋の情報を基に予約情報を取得して予約リストに追加し、成功メッセージを表示する機能を持っています。
+function: AddNewReservationScreen
+id: F042
