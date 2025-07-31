@@ -1,0 +1,3 @@
+description: '`ReadReservationInfo` 関数は、予約情報を入力し、重複しない予約ID、存在するユーザーID、および利用可能な部屋IDを確認して予約情報を設定することを目的としています。'
+function: ReadReservationInfo
+id: F040
