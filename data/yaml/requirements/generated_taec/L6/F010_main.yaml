@@ -1,0 +1,7 @@
+function: main
+id: F010
+taec:
+  action: MainMenu関数を実行します。
+  constraint: この関数自体はエラー処理を行わず、MainMenu関数内でのエラー処理が必要です。
+  effect: プログラムは正常終了を示す終了コード0を返します。
+  trigger: プログラムの開始時にこの関数が呼び出されます。
