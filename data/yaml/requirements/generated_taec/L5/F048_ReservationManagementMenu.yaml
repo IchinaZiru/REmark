@@ -1,0 +1,7 @@
+function: ReservationManagementMenu
+id: F048
+taec:
+  action: ユーザーにメニューを表示し、選択肢を入力させる。
+  constraint: ユーザーの選択が1から5の範囲内でない場合、エラーメッセージを表示し再入力を促す。
+  effect: ユーザーの選択に基づいて予約の追加、削除、表示、日付でのソートを実行する。
+  trigger: ユーザーが予約管理メニューを開くとき。
