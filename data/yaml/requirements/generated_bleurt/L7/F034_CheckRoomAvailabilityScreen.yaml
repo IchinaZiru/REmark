@@ -1,0 +1,3 @@
+description: この関数は、ホテルや施設の予約システムにおいて、ユーザーが部屋の空き状況を名前またはIDで確認するための選択画面を提供し、選択に応じた検索を実行します。
+function: CheckRoomAvailabilityScreen
+id: F034
