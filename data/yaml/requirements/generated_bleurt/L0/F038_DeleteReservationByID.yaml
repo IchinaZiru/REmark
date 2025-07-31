@@ -1,0 +1,3 @@
+description: 指定されたIDを持つ予約を予約リストから削除し、更新されたリストを返す関数です。
+function: DeleteReservationByID
+id: F038
