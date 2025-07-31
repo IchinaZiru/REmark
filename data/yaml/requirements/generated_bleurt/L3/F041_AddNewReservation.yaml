@@ -1,0 +1,3 @@
+description: この関数は、新しい予約を既存の予約リストの末尾に追加する機能を持ち、リストが空の場合やNULLの場合には新しい予約をそのまま返します。
+function: AddNewReservation
+id: F041
