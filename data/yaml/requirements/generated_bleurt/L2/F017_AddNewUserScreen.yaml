@@ -1,0 +1,3 @@
+description: この関数は、新しいユーザー情報を入力し、既存のユーザーリストに同じIDのユーザーがいない場合にそのユーザーをリストに追加する画面を表示します。
+function: AddNewUserScreen
+id: F017
