@@ -1,0 +1,7 @@
+function: SearchRoomByNameScreen
+id: F030
+taec:
+  action: 入力された名前を用いてリスト内の部屋を検索する。
+  constraint: 部屋が見つからない場合はプログラムを一時停止し、ユーザーに再試行の機会を与える。
+  effect: 部屋が見つからない場合は「Room not Found!」というメッセージを表示する。
+  trigger: ユーザーが部屋の名前を入力する。
