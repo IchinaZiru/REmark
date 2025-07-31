@@ -1,0 +1,3 @@
+description: この関数は、ユーザー構造体の情報をフォーマットして、ID、名前、姓を標準出力に表示します。
+function: DisplayUserCard
+id: F011
