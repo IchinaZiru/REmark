@@ -1,0 +1,3 @@
+description: ユーザーが入力したIDを基に部屋リストから部屋を検索し、見つかった場合は部屋情報を表示し、見つからない場合はエラーメッセージを表示する関数です。
+function: SearchRoomByIDScreen
+id: F031
