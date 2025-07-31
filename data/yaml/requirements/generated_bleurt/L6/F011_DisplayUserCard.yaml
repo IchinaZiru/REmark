@@ -1,0 +1,3 @@
+description: この関数は、ユーザー構造体のポインタを受け取り、そのID、名前、姓を一貫したフォーマットでコンソールに表示することを目的としています。
+function: DisplayUserCard
+id: F011
