@@ -1,0 +1,7 @@
+function: ExitScreen
+id: F008
+taec:
+  action: 画面をクリアし、終了メッセージと作成者情報を表示する。
+  constraint: エラー処理は含まれておらず、`system(\
+  effect: 画面に固定の終了メッセージと作成者情報が表示される。
+  trigger: プログラムの終了時に終了画面を表示する必要があるとき。
