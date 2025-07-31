@@ -1,0 +1,3 @@
+description: この関数は、予約リストを順に検索し、指定されたIDと一致する予約が見つかった場合、その予約のポインタを返すことを目的としています。
+function: SearchReservationByID
+id: F037
