@@ -1,0 +1,7 @@
+function: DisplayReservationsScreen
+id: F044
+taec:
+  action: 予約リストが空かどうかをチェックし、空でない場合は各予約を順に表示する。
+  constraint: 予約リストがNULLでない場合、各予約は順に表示されるが、表示後にプログラムは一時停止する。
+  effect: 予約リストが空の場合は「List is empty!」と表示され、空でない場合は各予約が順に表示される。
+  trigger: DisplayReservationsScreen関数が呼び出される。
