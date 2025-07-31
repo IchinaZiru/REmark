@@ -1,0 +1,3 @@
+description: この関数は、リンクリストから指定されたIDを持つユーザーを見つけて削除し、リストを更新します。
+function: DeleteUserByID
+id: F016
