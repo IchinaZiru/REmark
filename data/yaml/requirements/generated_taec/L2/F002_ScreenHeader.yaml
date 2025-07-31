@@ -1,0 +1,7 @@
+function: ScreenHeader
+id: F002
+taec:
+  action: 画面をクリアし、指定されたタイトルを装飾ラインで囲んで表示する。
+  constraint: タイトルはMAX_STRING_SIZEの制限内である必要がある。
+  effect: 標準出力にタイトルが装飾ラインと共に表示される。
+  trigger: 関数が呼び出されるとき。
