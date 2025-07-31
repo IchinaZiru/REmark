@@ -1,0 +1,7 @@
+function: DisplayRoomCard
+id: F023
+taec:
+  action: 指定された部屋の情報をコンソールに出力する。
+  constraint: 部屋の情報はRoomPtr型のポインタを介して提供される必要がある。
+  effect: 部屋のID、名前、予約状況、および予約されている場合はその詳細が表示される。
+  trigger: DisplayRoomCard関数が呼び出されるとき。
