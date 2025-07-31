@@ -1,0 +1,7 @@
+function: PauseProgram
+id: F001
+taec:
+  action: プログラムはユーザーにEnterキーを押すように促すメッセージを表示する。
+  constraint: ユーザーはEnterキー以外のキーを押してもプログラムは進行しない。
+  effect: ユーザーがEnterキーを押すと、プログラムはメインメニューに戻る。
+  trigger: ユーザーがプログラムの一時停止を必要とする状況に直面したとき。
