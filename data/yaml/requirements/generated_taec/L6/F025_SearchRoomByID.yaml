@@ -1,0 +1,7 @@
+function: SearchRoomByID
+id: F025
+taec:
+  action: リンクリストを順にチェックし、IDが一致する部屋を探します。
+  constraint: 呼び出し側でNULLが返された場合にNULLチェックを行う必要があります。
+  effect: 一致するIDを持つ部屋のポインタが返され、見つからない場合はNULLが返されます。
+  trigger: 特定のIDを持つ部屋を検索する必要があるときに関数が呼び出されます。
