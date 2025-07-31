@@ -1,0 +1,7 @@
+function: DisplayUserCard
+id: F011
+taec:
+  action: ユーザーのID、名前、姓をprintf関数を用いてコンソールに出力する。
+  constraint: ユーザー情報はID、名前、姓の順に一貫したフォーマットで表示されなければならない。
+  effect: ユーザーの情報がコンソールにフォーマットされた形で表示される。
+  trigger: ユーザー構造体のポインタが関数に渡されるとき。
