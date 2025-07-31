@@ -1,0 +1,3 @@
+description: ユーザーにEnterキーを押させてメインメニューに戻るための一時停止を実装する関数です。
+function: PauseProgram
+id: F001
