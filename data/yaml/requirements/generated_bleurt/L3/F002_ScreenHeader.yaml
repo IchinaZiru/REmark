@@ -1,0 +1,3 @@
+description: この関数は、画面をクリアした後、指定されたタイトルを装飾ラインで囲んで標準出力に表示します。
+function: ScreenHeader
+id: F002
