@@ -1,0 +1,3 @@
+description: 指定されたIDの予約を予約リストから削除し、メモリを解放する関数です。
+function: DeleteReservationByID
+id: F038
