@@ -1,0 +1,3 @@
+description: ユーザーリストから指定されたIDを持つユーザーを検索し、見つかればそのユーザーへのポインタを返し、見つからなければNULLを返す関数です。
+function: SearchUserByID
+id: F014
