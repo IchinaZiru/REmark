@@ -1,0 +1,3 @@
+description: この関数は、ユーザーに名前を入力させ、その名前でユーザーリストを検索し、該当するユーザーが存在するかどうかを表示します。
+function: SearchUserByFirstNameScreen
+id: F018
