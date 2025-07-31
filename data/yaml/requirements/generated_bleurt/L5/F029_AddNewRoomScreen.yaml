@@ -1,0 +1,3 @@
+description: 新しい部屋の情報を入力し、部屋IDが重複していない場合にリストに追加する画面を表示する関数です。
+function: AddNewRoomScreen
+id: F029
