@@ -1,0 +1,4 @@
+description: このC関数 `ExitScreen` は、2つの日付 `Date1` と `Date2` を比較し、`Date1` の日が `Date2`
+  の日よりも前であるかどうかを判定します。
+function: ExitScreen
+id: F008
