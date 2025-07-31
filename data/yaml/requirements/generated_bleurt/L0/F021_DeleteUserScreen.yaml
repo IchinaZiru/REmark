@@ -1,0 +1,3 @@
+description: '`DeleteUserScreen` 関数は、ユーザーリストから指定されたIDのユーザーを削除するためのインターフェースを提供します。'
+function: DeleteUserScreen
+id: F021
