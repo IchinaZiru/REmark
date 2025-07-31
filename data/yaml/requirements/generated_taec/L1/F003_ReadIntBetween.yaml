@@ -1,0 +1,7 @@
+function: ReadIntBetween
+id: F003
+taec:
+  action: ユーザーに指定された範囲内の整数を入力させます。
+  constraint: 入力される整数は指定された範囲内でなければなりません。
+  effect: ユーザーから有効な範囲内の整数が取得されます。
+  trigger: ユーザーが整数を入力する必要があるときに関数が呼び出されます。
