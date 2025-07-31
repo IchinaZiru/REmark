@@ -1,0 +1,3 @@
+description: この関数は、予約リストが空かどうかを確認し、空でない場合は各予約を順に表示する画面を出力します。
+function: DisplayReservationsScreen
+id: F044
