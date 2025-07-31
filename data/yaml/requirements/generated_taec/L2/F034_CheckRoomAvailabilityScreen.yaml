@@ -1,0 +1,7 @@
+function: CheckRoomAvailabilityScreen
+id: F034
+taec:
+  action: ユーザーに名前またはIDでの検索方法を選択させます。
+  constraint: ユーザーの選択は1または2の整数でなければなりません。
+  effect: 選択された検索方法に基づいて、対応する検索関数が呼び出されます。
+  trigger: ユーザーが部屋の空き状況を確認したいときにこの関数が呼び出されます。
