@@ -1,0 +1,7 @@
+function: SearchReservationByID
+id: F037
+taec:
+  action: 予約リストを先頭から順に走査し、各予約のIDを確認する。
+  constraint: 予約リストがNULLでないこと、およびIDが一致する予約が存在する場合に限り、ポインタが返される。
+  effect: 指定されたIDを持つ予約が見つかった場合、その予約へのポインタを返す。
+  trigger: 予約リストから特定のIDを持つ予約を検索する要求があるとき。
