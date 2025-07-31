@@ -1,0 +1,3 @@
+description: この関数は、ユーザー管理メニューを表示し、ユーザーの追加、検索、表示、削除などの操作を選択して実行するためのインターフェースを提供します。
+function: UserManagementMenu
+id: F022
