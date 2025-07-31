@@ -1,0 +1,7 @@
+function: main
+id: F010
+taec:
+  action: MainMenu関数を実行する。
+  constraint: 関数は引数を取らず、戻り値として0を返す。
+  effect: メインメニューが表示される。
+  trigger: プログラムが開始されるときに関数が呼び出される。
