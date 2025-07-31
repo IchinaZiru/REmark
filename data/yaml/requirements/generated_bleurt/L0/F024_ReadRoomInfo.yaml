@@ -1,0 +1,3 @@
+description: '`ReadRoomInfo` 関数は、ユーザーから部屋のIDと名前を入力させ、それを指定された `RoomPtr` 構造体に格納し、初期状態として予約されていないことを示すフラグを設定する。'
+function: ReadRoomInfo
+id: F024
