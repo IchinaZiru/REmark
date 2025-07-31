@@ -1,0 +1,7 @@
+function: SearchRoomByName
+id: F027
+taec:
+  action: 部屋のリストを先頭から順に検索する。
+  constraint: 部屋のリストがNULLでないこと。
+  effect: 指定された名前に一致する部屋が見つかった場合、その部屋の情報を表示し、存在フラグをtrueに設定する。
+  trigger: 部屋の名前が指定されるとき。
