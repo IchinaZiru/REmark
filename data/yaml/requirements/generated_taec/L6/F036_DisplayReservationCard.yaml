@@ -1,0 +1,7 @@
+function: DisplayReservationCard
+id: F036
+taec:
+  action: Reservation構造体の各フィールドを取得し、フォーマットされた文字列として標準出力に表示します。
+  constraint: ReservationがNULLの場合、プログラムがクラッシュする可能性があるため、NULLチェックを追加することが推奨されます。
+  effect: 予約情報がフォーマットされ、ユーザーに視覚的に表示されます。
+  trigger: 予約管理システムでユーザーに予約の詳細を表示する必要があるときに呼び出されます。
