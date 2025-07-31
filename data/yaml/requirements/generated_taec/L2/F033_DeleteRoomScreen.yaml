@@ -1,0 +1,7 @@
+function: DeleteRoomScreen
+id: F033
+taec:
+  action: ユーザーに部屋IDを入力させ、そのIDの部屋を検索し、見つかった場合は削除の確認を求める。
+  constraint: 入力された部屋IDが0から9999の範囲内である必要がある。
+  effect: ユーザーが削除を確認すると、指定されたIDの部屋がリストから削除される。
+  trigger: ユーザーが部屋の削除画面を開くとき。
