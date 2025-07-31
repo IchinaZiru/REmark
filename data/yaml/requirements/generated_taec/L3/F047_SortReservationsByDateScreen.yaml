@@ -1,0 +1,7 @@
+function: SortReservationsByDateScreen
+id: F047
+taec:
+  action: 予約リストを日付順にソートするために`SortReservationsByDate`関数を呼び出します。
+  constraint: 予約リストがNULLでない場合にのみソートを実行します。
+  effect: 予約リストが日付順にソートされ、成功メッセージが表示されます。
+  trigger: 予約リストがNULLでない場合にトリガーされます。
