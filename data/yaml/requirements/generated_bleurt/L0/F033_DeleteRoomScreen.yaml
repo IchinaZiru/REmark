@@ -1,0 +1,3 @@
+description: '`DeleteRoomScreen` 関数は、ユーザーに部屋のIDを入力させ、そのIDに対応する部屋が存在する場合は削除するかどうかを確認し、削除する選択をした場合はその部屋を削除する機能を提供します。'
+function: DeleteRoomScreen
+id: F033
