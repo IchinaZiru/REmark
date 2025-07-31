@@ -1,0 +1,3 @@
+description: '`AddNewUser` 関数は、新しいユーザーを既存のユーザーリストの末尾に追加することを目的としています。'
+function: AddNewUser
+id: F015
