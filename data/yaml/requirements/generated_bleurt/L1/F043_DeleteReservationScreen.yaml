@@ -1,0 +1,3 @@
+description: この関数は、ユーザーに予約IDを入力させ、そのIDに対応する予約が存在する場合は確認の上で予約を削除し、関連する部屋の予約情報をリセットする機能を提供します。
+function: DeleteReservationScreen
+id: F043
