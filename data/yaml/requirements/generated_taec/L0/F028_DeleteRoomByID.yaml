@@ -1,0 +1,7 @@
+function: DeleteRoomByID
+id: F028
+taec:
+  action: 部屋のリストを順にチェックし、指定されたIDを持つ部屋を見つける。
+  constraint: 指定されたIDを持つ部屋がリストに存在しない場合、何も削除されない。
+  effect: 指定されたIDを持つ部屋がリストから削除され、メモリが解放される。
+  trigger: 指定されたIDを持つ部屋を削除する必要があるとき。
