@@ -1,0 +1,3 @@
+description: この関数は、ユーザーにID、名前、苗字を入力させ、それらの情報を指定されたUserPtr構造体に格納します。
+function: ReadUserInfo
+id: F012
