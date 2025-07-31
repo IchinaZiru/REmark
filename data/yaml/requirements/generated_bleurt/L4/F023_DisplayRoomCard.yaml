@@ -1,0 +1,3 @@
+description: 指定された部屋のID、名前、予約状況、および予約されている場合はその日時をフォーマットして表示する関数です。
+function: DisplayRoomCard
+id: F023
