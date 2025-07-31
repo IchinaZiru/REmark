@@ -1,0 +1,7 @@
+function: ReadReservationInfo
+id: F040
+taec:
+  action: ユーザーから予約ID、ユーザーID、部屋IDを順に入力し、それぞれのIDが有効であることを確認する。
+  constraint: 予約IDは既存の予約と重複してはならず、ユーザーIDは存在するユーザーでなければならず、部屋IDは予約可能な部屋でなければならない。
+  effect: 有効な予約情報が予約リストに追加される準備が整う。
+  trigger: ユーザーが予約情報の入力を開始する。
