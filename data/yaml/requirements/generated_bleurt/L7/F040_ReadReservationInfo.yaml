@@ -1,0 +1,3 @@
+description: この関数は、ユーザーから予約情報を取得し、既存のデータと照合して有効な予約を作成し、予約リストに追加します。
+function: ReadReservationInfo
+id: F040
