@@ -1,0 +1,7 @@
+function: ReadUserInfo
+id: F012
+taec:
+  action: ユーザーがID、名前、苗字を入力し、それらがUserPtr構造体に格納される。
+  constraint: IDは0から9999の範囲でなければならず、名前の入力でバッファオーバーフローが発生しないようにする必要がある。
+  effect: 入力されたユーザー情報が構造体に保存され、NextポインタがNULLに設定される。
+  trigger: ユーザーがユーザー情報の入力を求められる。
