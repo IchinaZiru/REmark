@@ -1,0 +1,3 @@
+description: '`RoomManagementMenu` 関数は、部屋の追加、検索、表示、削除、空室確認などの操作を行うためのメニューを表示し、ユーザーの選択に応じて適切な処理を実行する。'
+function: RoomManagementMenu
+id: F035
