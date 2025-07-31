@@ -1,0 +1,7 @@
+function: DisplayRoomListScreen
+id: F032
+taec:
+  action: 部屋リストがNULLかどうかを確認し、NULLであれば空リストのメッセージを表示し、そうでなければ各部屋情報を順に表示する。
+  constraint: 部屋リストがNULLの場合以外のエラー処理は実装されていない。
+  effect: 部屋リストがNULLの場合は'List is empty!'と表示され、そうでない場合は各部屋の情報が順に表示される。
+  trigger: 部屋リストが画面に表示される必要があるときに関数が呼び出される。
