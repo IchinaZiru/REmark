@@ -1,0 +1,7 @@
+function: SearchUserByID
+id: F014
+taec:
+  action: リストの先頭から順に各ユーザーのIDを比較し、一致するユーザーを探す。
+  constraint: ユーザーリストがNULLの場合やIDが見つからない場合はNULLを返す。
+  effect: 一致するユーザーが見つかればそのユーザーへのポインタを返し、見つからなければNULLを返す。
+  trigger: ユーザーリストから特定のIDを持つユーザーを検索する要求が発生したとき。
