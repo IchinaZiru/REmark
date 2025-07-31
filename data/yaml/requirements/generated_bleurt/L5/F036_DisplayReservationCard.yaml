@@ -1,0 +1,3 @@
+description: この関数は、Reservation構造体の情報をフォーマットして標準出力に表示するためのもので、NULLチェックが推奨されます。
+function: DisplayReservationCard
+id: F036
