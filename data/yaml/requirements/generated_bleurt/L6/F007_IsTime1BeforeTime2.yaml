@@ -1,0 +1,3 @@
+description: この関数は、2つの時間を比較して、最初の時間が2番目の時間よりも前であるかどうかを判定します。
+function: IsTime1BeforeTime2
+id: F007
