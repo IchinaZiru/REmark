@@ -1,0 +1,3 @@
+description: '`AddNewRoomScreen` 関数は、新しい部屋の情報を入力し、既存の部屋リストにその部屋が存在しない場合に追加する機能を提供します。'
+function: AddNewRoomScreen
+id: F029
