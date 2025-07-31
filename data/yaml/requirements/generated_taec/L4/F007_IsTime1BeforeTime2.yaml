@@ -1,0 +1,7 @@
+function: IsTime1BeforeTime2
+id: F007
+taec:
+  action: Time1の時間と分をTime2と比較します。
+  constraint: Time1とTime2の時間と分が同じか、Time1が遅い場合はfalseを返します。
+  effect: Time1がTime2よりも早い場合にtrueを返します。
+  trigger: Time1とTime2の比較が要求されるときに関数が呼び出されます。
