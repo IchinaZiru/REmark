@@ -1,0 +1,7 @@
+function: SortReservationsByDateScreen
+id: F047
+taec:
+  action: 予約リストを日付順にソートする。
+  constraint: 予約リストが空の場合、ソートは行われず、リストが空であることが通知される。
+  effect: 予約リストが日付順に並び替えられる。
+  trigger: ユーザーが予約を日付順にソートする画面を表示したとき。
