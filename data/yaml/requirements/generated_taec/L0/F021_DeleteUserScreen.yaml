@@ -1,0 +1,7 @@
+function: DeleteUserScreen
+id: F021
+taec:
+  action: 入力されたIDに基づいてユーザーを検索し、見つかった場合は削除の確認を求める。
+  constraint: ユーザーIDは0から9999の範囲でなければならない。
+  effect: ユーザーが削除を確認すると、指定されたIDのユーザーがリストから削除される。
+  trigger: ユーザーが削除画面でユーザーIDを入力する。
