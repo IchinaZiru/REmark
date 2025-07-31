@@ -1,0 +1,3 @@
+description: リンクリスト内の部屋をIDで検索し、該当する部屋があればそのポインタを返し、見つからなければNULLを返す関数です。
+function: SearchRoomByID
+id: F025
