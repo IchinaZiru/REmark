@@ -1,0 +1,7 @@
+function: AddNewReservation
+id: F041
+taec:
+  action: 新しい予約を既存の予約リストの末尾に追加する。
+  constraint: 予約リストが空の場合は、新しい予約をそのまま返す。
+  effect: 予約リストに新しい予約が追加される。
+  trigger: 新しい予約を追加する必要があるとき。
