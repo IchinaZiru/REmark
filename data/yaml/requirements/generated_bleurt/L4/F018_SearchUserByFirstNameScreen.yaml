@@ -1,0 +1,3 @@
+description: ユーザーに名前の入力を求め、その名前でユーザーリストを検索し、見つからなければ「User not Found!」と表示する関数です。
+function: SearchUserByFirstNameScreen
+id: F018
