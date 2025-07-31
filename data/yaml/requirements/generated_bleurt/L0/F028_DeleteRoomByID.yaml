@@ -1,0 +1,3 @@
+description: '`DeleteRoomByID` 関数は、指定されたIDを持つ部屋をリンクリストから削除し、更新されたリストを返します。'
+function: DeleteRoomByID
+id: F028
