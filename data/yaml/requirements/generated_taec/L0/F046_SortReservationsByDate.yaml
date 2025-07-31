@@ -1,0 +1,7 @@
+function: SortReservationsByDate
+id: F046
+taec:
+  action: 予約リスト内の各予約のデータを比較し、必要に応じてデータを交換する。
+  constraint: 予約リストは少なくとも1つの予約を含み、各予約は次の予約へのポインタを持っている。
+  effect: 予約リストが日付順にソートされる。
+  trigger: 予約リストが日付順にソートされていないとき。
