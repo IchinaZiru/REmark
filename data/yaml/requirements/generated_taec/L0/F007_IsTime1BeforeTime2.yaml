@@ -1,0 +1,7 @@
+function: IsTime1BeforeTime2
+id: F007
+taec:
+  action: Time1とTime2の時刻を比較する。
+  constraint: Time1とTime2はstTime型であり、HourとMinuteのメンバーを持つ。
+  effect: Time1がTime2よりも前の時刻である場合にtrueを返す。
+  trigger: 関数IsTime1BeforeTime2が呼び出されるとき。
