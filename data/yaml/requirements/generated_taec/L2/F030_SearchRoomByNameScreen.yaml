@@ -1,0 +1,7 @@
+function: SearchRoomByNameScreen
+id: F030
+taec:
+  action: 入力された名前を用いてリスト内の部屋を検索する。
+  constraint: 部屋の名前は最大文字数が定められている。
+  effect: 部屋が見つからない場合、'Room not Found!'というメッセージを表示する。
+  trigger: ユーザーが部屋の名前を入力する。
