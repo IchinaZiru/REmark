@@ -1,0 +1,7 @@
+function: ReadReservationInfo
+id: F040
+taec:
+  action: ユーザーから予約ID、ユーザーID、部屋IDを順に入力し、それぞれの有効性を確認する。
+  constraint: 予約IDは既存の予約と重複してはならず、ユーザーIDは存在するユーザーでなければならず、部屋IDは存在し、かつ予約されていない部屋でなければならない。
+  effect: 有効な予約情報がReservationInfoに格納され、次の予約情報へのポインタがNULLに設定される。
+  trigger: ユーザーが予約情報の入力を開始するために関数ReadReservationInfoを呼び出す。
