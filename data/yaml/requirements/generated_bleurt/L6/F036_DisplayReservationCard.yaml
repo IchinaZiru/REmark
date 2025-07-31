@@ -1,0 +1,3 @@
+description: この関数は、予約管理システムにおいて、Reservation構造体から取得した予約情報をフォーマットして標準出力に表示するためのものです。
+function: DisplayReservationCard
+id: F036
