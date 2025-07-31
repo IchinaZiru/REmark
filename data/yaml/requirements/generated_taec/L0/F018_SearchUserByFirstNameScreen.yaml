@@ -1,0 +1,7 @@
+function: SearchUserByFirstNameScreen
+id: F018
+taec:
+  action: ユーザーがファーストネームを入力し、プログラムがその名前でユーザーを検索する。
+  constraint: ファーストネームの入力は最大文字数がMAX_STRING_SIZEに制限されている。
+  effect: 入力されたファーストネームに一致するユーザーが見つからない場合、ユーザーが見つからなかったことを通知するメッセージが表示される。
+  trigger: ユーザーがファーストネームの入力を求められたとき。
