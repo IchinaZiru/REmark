@@ -1,0 +1,7 @@
+function: SwapReservationData
+id: F045
+taec:
+  action: 2つの予約データの各フィールドの値を入れ替える。
+  constraint: Reservation1とReservation2は有効なReservationPtrでなければならない。
+  effect: Reservation1とReservation2のデータが互いに交換される。
+  trigger: SwapReservationData関数が呼び出されるとき。
