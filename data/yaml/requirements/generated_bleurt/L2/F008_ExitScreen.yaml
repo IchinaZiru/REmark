@@ -1,0 +1,4 @@
+description: このC関数は、2つの時間構造体 `Time1` と `Time2` を比較し、`Time1` が `Time2` よりも早い時間であるかどうかを判定して、早ければ
+  `true` を返し、そうでなければ `false` を返します。
+function: ExitScreen
+id: F008
