@@ -1,0 +1,7 @@
+function: PauseProgram
+id: F001
+taec:
+  action: ユーザーの入力を待機し、Enterキーが押されると次の処理に進む。
+  constraint: Enterキー以外の入力を受け取ると意図した動作をしない可能性があり、エラー処理は実装されていない。
+  effect: プログラムが一時停止し、ユーザーがEnterキーを押すとメインメニューに戻る。
+  trigger: ユーザーがEnterキーを押すことを促すメッセージが表示される。
