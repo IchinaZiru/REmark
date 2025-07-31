@@ -1,0 +1,3 @@
+description: 指定された名前の部屋をリストから検索し、見つかればその情報を表示して存在フラグを更新します。
+function: SearchRoomByName
+id: F027
