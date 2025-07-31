@@ -1,0 +1,7 @@
+function: DisplayUserListScreen
+id: F020
+taec:
+  action: ユーザーリストを画面に表示する。
+  constraint: ユーザーリストがNULLでない場合、リスト内の全てのユーザーが表示される。
+  effect: ユーザーリストが画面に表示され、リストが空の場合はその旨が表示される。
+  trigger: ユーザーリスト画面を表示する必要があるとき。
