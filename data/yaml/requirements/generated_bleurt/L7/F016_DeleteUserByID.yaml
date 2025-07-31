@@ -1,0 +1,3 @@
+description: 指定されたIDを持つユーザーをリンクリストから削除し、更新されたリストを返します。
+function: DeleteUserByID
+id: F016
