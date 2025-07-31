@@ -1,0 +1,7 @@
+function: SearchRoomByID
+id: F025
+taec:
+  action: 部屋のリストを先頭から順に探索する。
+  constraint: 部屋のリストがNULLでないことを前提とする。
+  effect: 指定されたIDを持つ部屋が見つかった場合、その部屋のポインタを返す。
+  trigger: 部屋のリストと検索したい部屋のIDが与えられたとき。
