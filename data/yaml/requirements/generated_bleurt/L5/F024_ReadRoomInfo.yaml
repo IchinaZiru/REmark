@@ -1,0 +1,3 @@
+description: この関数は、ユーザーから部屋のIDと名前を入力し、それを構造体に格納し、予約状態を初期化して次の部屋へのポインタをNULLに設定するためのものです。
+function: ReadRoomInfo
+id: F024
