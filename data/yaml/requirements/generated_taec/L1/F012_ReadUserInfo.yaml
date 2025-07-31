@@ -1,0 +1,7 @@
+function: ReadUserInfo
+id: F012
+taec:
+  action: ユーザーがID、名前、苗字を入力する。
+  constraint: IDは0から9999の範囲でなければならない。
+  effect: 入力されたユーザー情報が指定された構造体に格納される。
+  trigger: ユーザーがユーザー情報の入力を求められたとき。
