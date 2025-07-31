@@ -1,0 +1,3 @@
+description: この関数は、予約管理システムにおいて、予約リストを日付順に並べ替えるために使用されます。
+function: SortReservationsByDate
+id: F046
