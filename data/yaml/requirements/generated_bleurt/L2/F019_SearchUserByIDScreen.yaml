@@ -1,0 +1,3 @@
+description: この関数は、ユーザーにIDを入力させ、そのIDに基づいてユーザーリストから該当するユーザーを検索し、見つかった場合はそのユーザー情報を表示する機能を提供します。
+function: SearchUserByIDScreen
+id: F019
