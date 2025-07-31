@@ -1,0 +1,7 @@
+function: DeleteReservationByID
+id: F038
+taec:
+  action: リストを順に走査し、指定されたIDと一致する予約を見つけたら、そのノードをリストから削除する。
+  constraint: リストが空でないこと、指定されたIDがリスト内に存在すること。
+  effect: 指定されたIDの予約がリストから削除され、メモリが解放される。
+  trigger: 予約リストから特定のIDの予約を削除する要求があるとき。
