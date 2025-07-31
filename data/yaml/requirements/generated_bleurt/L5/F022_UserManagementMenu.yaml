@@ -1,0 +1,3 @@
+description: この関数は、ユーザーに対してユーザー管理に関する操作を選択させ、選択された操作を実行するためのメニューを表示します。
+function: UserManagementMenu
+id: F022
