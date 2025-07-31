@@ -1,0 +1,7 @@
+function: IsDate1BeforeDate2
+id: F006
+taec:
+  action: Date1とDate2の日付を比較する。
+  constraint: Date1とDate2は有効な日付である必要がある。
+  effect: Date1がDate2より前の日付である場合にtrueを返す。
+  trigger: 関数IsDate1BeforeDate2が呼び出されるとき。
