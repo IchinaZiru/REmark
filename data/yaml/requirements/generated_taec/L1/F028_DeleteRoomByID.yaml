@@ -1,0 +1,7 @@
+function: DeleteRoomByID
+id: F028
+taec:
+  action: リンクリストを走査して、指定されたIDの部屋を見つける。
+  constraint: 指定されたIDの部屋がリンクリストに存在することが前提である。
+  effect: 指定されたIDの部屋がリンクリストから削除され、メモリが解放される。
+  trigger: 関数が呼び出され、削除したい部屋のIDが指定される。
