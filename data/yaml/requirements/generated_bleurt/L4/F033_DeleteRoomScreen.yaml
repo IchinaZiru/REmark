@@ -1,0 +1,3 @@
+description: 指定されたIDの部屋をリストから削除するための画面を表示し、ユーザーにIDを入力させ、削除の確認を経て、承認された場合に削除を実行します。
+function: DeleteRoomScreen
+id: F033
