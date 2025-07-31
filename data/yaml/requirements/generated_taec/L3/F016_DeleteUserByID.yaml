@@ -1,0 +1,7 @@
+function: DeleteUserByID
+id: F016
+taec:
+  action: リンクリストを線形探索して指定されたIDを持つノードを見つける。
+  constraint: 指定されたIDを持つノードがリストに存在すること。
+  effect: 指定されたIDを持つノードをリストから削除し、メモリを解放する。
+  trigger: ユーザーの削除要求が発生したとき。
