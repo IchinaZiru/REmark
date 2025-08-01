@@ -7,7 +7,6 @@ import argparse
 import time
 import re
 import requests
-import time
 import datetime
 from openai import OpenAI
 import anthropic
@@ -15,25 +14,27 @@ from anthropic._exceptions import OverloadedError
 from dotenv import load_dotenv
 
 # ------------------------------
+# 環境変数ロード
+# ------------------------------
+load_dotenv()
+
+# ------------------------------
 # CLI 引数
 # ------------------------------
+DEFAULT_OLLAMA_HOST = os.getenv("OLLAMA_HOST", "http://localhost:11434")
+
 parser = argparse.ArgumentParser(description="Run MCQA evaluation for a specific comment level")
 parser.add_argument("--level", type=int, required=True, help="コメントレベル L0〜L7")
 parser.add_argument("--model", type=str, required=True,
                     help="使用モデル名 (例: gpt-4o / openwebui-llama3:latest / claude-3-sonnet / ollama-llama3:latest)")
-parser.add_argument("--ollama_host", type=str, default="http://192.168.11.55:11434",
-                    help="Ollama APIのホストURL (デフォルト: http://192.168.11.55:11434)")
+parser.add_argument("--ollama_host", type=str, default=DEFAULT_OLLAMA_HOST,
+                    help=f"Ollama APIのホストURL (デフォルト: 環境変数 OLLAMA_HOST または {DEFAULT_OLLAMA_HOST})")
 args = parser.parse_args()
 
 LEVEL = args.level
 assert 0 <= LEVEL <= 7, "--level は 0〜7 を指定してください"
 
 MODEL = args.model
-
-# ------------------------------
-# 環境変数ロード
-# ------------------------------
-load_dotenv()
 
 # ------------------------------
 # クライアントクラス
@@ -109,9 +110,7 @@ for i, quiz_path in enumerate(quiz_files, 1):
             f"問題: {quiz['question']}\n{choice_lines}"
     )
     
-    # 計測開始
     start_time = time.time()
-
     answer_raw = ""
 
     if MODEL.startswith("claude"):
@@ -142,15 +141,12 @@ for i, quiz_path in enumerate(quiz_files, 1):
         )
         answer_raw = res.choices[0].message.content.strip()
         
-    # 経過時間計算
     elapsed_time = round(time.time() - start_time, 2)
 
-    # 正規表現で A/B/C/D を抽出（柔軟化）
     match = re.search(r"\b([ABCD])\b", answer_raw, re.IGNORECASE)
     if not match:
         match = re.search(r"(?:Option|Answer|選択肢)?\s*([ABCD])", answer_raw, re.IGNORECASE)
     if not match:
-        # 数字を文字にマッピング（例: 1 → A）
         num_match = re.search(r"\b([1-4])\b", answer_raw)
         if num_match:
             num_to_char = {"1": "A", "2": "B", "3": "C", "4": "D"}
@@ -161,9 +157,9 @@ for i, quiz_path in enumerate(quiz_files, 1):
         answer = match.group(1).upper()
 
     fname = pathlib.Path(quiz_path).stem
-    results.append({"function": fname, "answer": answer})
+    results.append({"function": fname, "answer": answer, "elapsed_time_sec": elapsed_time})
 
-    print(f"[{i}/{total}] {fname}: 回答 = {answer} (raw: {answer_raw})")
+    print(f"[{i}/{total}] {fname}: 回答 = {answer} (raw: {answer_raw}) | 時間: {elapsed_time}s")
     time.sleep(1.0 if MODEL.startswith(("gpt-", "claude")) else 0.2)
 
 total_elapsed_time = round(time.time() - start_time_all, 2)
@@ -172,13 +168,13 @@ print(f"\n✓ モデル {MODEL} (L{LEVEL}) の総処理時間: {total_elapsed_ti
 # ------------------------------
 # 結果保存
 # ------------------------------
-out_dir = "outputs/mcqa_results"
 safe_model_name = MODEL.replace(":", "-")
-out_dir = os.path.join(out_dir, safe_model_name)
+out_dir = os.path.join("outputs", "mcqa_results", safe_model_name)
 os.makedirs(out_dir, exist_ok=True)
 out_csv = os.path.join(out_dir, f"L{LEVEL}.csv")
 pd.DataFrame(results).to_csv(out_csv, index=False)
-# 時間記録
+
 with open(out_csv, "a", encoding="utf-8") as f:
     f.write(f"\nTOTAL_ELAPSED_TIME(sec),{total_elapsed_time}\n")
+
 print(f"\n✔ 回答収集完了 → {out_csv}")
