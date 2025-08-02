@@ -11,7 +11,7 @@ for file in $files
 do
   echo "Committing $file ..."
   git add "$file"
-  git commit -m "eval data"
+  git commit -m "outputs data"
 done
 
-echo "✅"
+echo "✔ All changes committed successfully."
