@@ -100,7 +100,18 @@ for i, quiz_path in enumerate(quiz_files, 1):
     quiz = json.load(open(quiz_path, encoding="utf-8"))
     choice_lines = "\n".join(f"{chr(65+i)}. {c}" for i, c in enumerate(quiz["choices"]))
 
-    prompt = (
+    if MODEL.startswith("ollama-deepseek"):
+        prompt = (
+            "次のCコードと問題を読んで、"
+            "必ず A / B / C / D の1文字だけを1行で出力してください。\n"
+            "説明や理由は禁止です。\n"
+            "<think>タグも禁止です。\n"
+            "出力例: B\n\n"
+            f"```c\n{code_block}\n```\n\n"
+            f"問題: {quiz['question']}\n{choice_lines}"
+        )
+    else:
+        prompt = (
             "以下のCコードを読んで四択問題に答えてください。\n"
             "【重要】出力は必ず以下の中から1文字だけ選んでください：\n"
             "A / B / C / D\n\n"
@@ -108,7 +119,7 @@ for i, quiz_path in enumerate(quiz_files, 1):
             "もしわからない場合でも必ず A〜D の中から最も適切なものを選んでください。\n\n"
             f"```c\n{code_block}\n```\n\n"
             f"問題: {quiz['question']}\n{choice_lines}"
-    )
+        )
     
     start_time = time.time()
     answer_raw = ""
@@ -143,27 +154,37 @@ for i, quiz_path in enumerate(quiz_files, 1):
         
     elapsed_time = round(time.time() - start_time, 2)
 
-    match = re.search(r"\b([ABCD])\b", answer_raw, re.IGNORECASE)
-    if not match:
-        match = re.search(r"(?:Option|Answer|選択肢)?\s*([ABCD])", answer_raw, re.IGNORECASE)
-    if not match:
-        num_match = re.search(r"\b([1-4])\b", answer_raw)
-        if num_match:
-            num_to_char = {"1": "A", "2": "B", "3": "C", "4": "D"}
-            answer = num_to_char.get(num_match.group(1), "?")
+    if "deepseek" in MODEL.lower():
+        match = re.search(r"(?:解答|答えは|Answer)[:：]?\s*([ABCD])", answer_raw, re.IGNORECASE)
+        if match:
+            answer = match.group(1).upper()
         else:
-            answer = "?"
+            matches = re.findall(r"\b([ABCD])\b", answer_raw, re.IGNORECASE)
+            answer = matches[-1].upper() if matches else "?"
     else:
-        answer = match.group(1).upper()
+        # 通常の抽出処理
+        match = re.search(r"\b([ABCD])\b", answer_raw, re.IGNORECASE)
+        if not match:
+            match = re.search(r"(?:Option|Answer|選択肢)?\s*([ABCD])", answer_raw, re.IGNORECASE)
+        if not match:
+            num_match = re.search(r"\b([1-4])\b", answer_raw)
+            if num_match:
+                num_to_char = {"1": "A", "2": "B", "3": "C", "4": "D"}
+                answer = num_to_char.get(num_match.group(1), "?")
+            else:
+                answer = "?"
+        else:
+            answer = match.group(1).upper()
 
     fname = pathlib.Path(quiz_path).stem
     results.append({"function": fname, "answer": answer, "elapsed_time_sec": elapsed_time})
 
-    print(f"[{i}/{total}] {fname}: 回答 = {answer} (raw: {answer_raw}) | 時間: {elapsed_time}s")
+    print(f"[{i}/{total}] {fname}: 回答 = {answer} | 時間: {elapsed_time}s | raw: {answer_raw}".encode("cp932", errors="ignore").decode("cp932"))
+
     time.sleep(1.0 if MODEL.startswith(("gpt-", "claude")) else 0.2)
 
 total_elapsed_time = round(time.time() - start_time_all, 2)
-print(f"\n✓ モデル {MODEL} (L{LEVEL}) の総処理時間: {total_elapsed_time}s")
+print(f"\nモデル {MODEL} (L{LEVEL}) の総処理時間: {total_elapsed_time}s")
 
 # ------------------------------
 # 結果保存
@@ -177,4 +198,4 @@ pd.DataFrame(results).to_csv(out_csv, index=False)
 with open(out_csv, "a", encoding="utf-8") as f:
     f.write(f"\nTOTAL_ELAPSED_TIME(sec),{total_elapsed_time}\n")
 
-print(f"\n✔ 回答収集完了 → {out_csv}")
+print(f"\n回答収集完了 → {out_csv}")
