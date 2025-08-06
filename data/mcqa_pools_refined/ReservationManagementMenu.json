@@ -1,0 +1,10 @@
+{
+  "question": "関数の目的を最も正しく説明している選択肢は？",
+  "choices": [
+    "ReservationManagementMenu 関数は、ユーザーの認証と部屋の空き状況を管理するためのインターフェースを提供する。",
+    "ReservationManagementMenu 関数は、予約を自動的にキャンセルし、ユーザーに通知する機能を持つ。",
+    "ReservationManagementMenu 関数は、予約の追加、削除、表示、日付によるソートを行うためのユーザーインターフェースを提供する。",
+    "ReservationManagementMenu 関数は、ユーザーリストを管理し、ユーザー情報の追加と削除を行う。"
+  ],
+  "answer_index": 2
+}
