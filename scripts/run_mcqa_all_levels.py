@@ -1,7 +1,7 @@
 import subprocess
 import sys
 
-MODEL = "deepseek-r1:14b"
+MODEL = "llamacpp-scout-iq3"
 LEVELS = range(0, 8)
 
 for level in LEVELS:
