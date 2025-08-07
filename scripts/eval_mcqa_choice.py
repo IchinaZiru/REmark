@@ -6,8 +6,8 @@ from sentence_transformers import SentenceTransformer, util
 from tqdm import tqdm
 
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-MCQA_DIR = os.path.join(BASE_DIR, "data", "mcqa_pools")
-OUTPUT_DIR = os.path.join(BASE_DIR, "outputs/mcqa_qualities")
+MCQA_DIR = os.path.join(BASE_DIR, "data", "mcqa_pools_refined")
+OUTPUT_DIR = os.path.join(BASE_DIR, "outputs/mcqa_qualities_refined")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 MODEL_PATH = os.path.join(BASE_DIR, "models", "../models/Bleurt")
@@ -73,6 +73,6 @@ debug_df = pd.DataFrame(debug_results)
 debug_path = os.path.join(OUTPUT_DIR, "mcqa_quality_debug.csv")
 debug_df.to_csv(debug_path, index=False, encoding='utf-8-sig')
 
-print(f"\n✔品質チェック完了")
+print(f"\n✔ 品質チェック完了")
 print(f"  - サマリー: {summary_path}")
 print(f"  - デバッグ: {debug_path}")
