@@ -22,11 +22,11 @@ plt.rcParams['axes.unicode_minus'] = False
 sns.set(style='whitegrid', font=font_family)
 
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-OUTPUT_DIR = os.path.join(BASE_DIR, "outputs", "mcqa_qualities")
+OUTPUT_DIR = os.path.join(BASE_DIR, "outputs", "mcqa_qualities_refined")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # データ読み込み
-df = pd.read_csv(os.path.join(BASE_DIR, "outputs", "mcqa_quality_report.csv"))
+df = pd.read_csv(os.path.join(BASE_DIR, "outputs", "mcqa_qualities_refined", "mcqa_quality_report.csv"))
 
 # -------------------------------
 # 既存グラフ
@@ -66,7 +66,7 @@ plt.savefig(os.path.join(OUTPUT_DIR, "correlation_heatmap.png"))
 # -------------------------------
 # 関数別 可視化
 # -------------------------------
-debug_df = pd.read_csv(os.path.join(BASE_DIR, "outputs", "mcqa_quality_debug.csv"))
+debug_df = pd.read_csv(os.path.join(BASE_DIR, "outputs", "mcqa_qualities_refined", "mcqa_quality_debug.csv"))
 FUNC_DIR = os.path.join(OUTPUT_DIR, "functions")
 os.makedirs(FUNC_DIR, exist_ok=True)
 
