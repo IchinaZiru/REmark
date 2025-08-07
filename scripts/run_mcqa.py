@@ -22,13 +22,16 @@ load_dotenv()
 # CLI 引数
 # ------------------------------
 DEFAULT_OLLAMA_HOST = os.getenv("OLLAMA_HOST", "http://localhost:11434")
+DEFAULT_LLAMACPP_HOST = os.getenv("LLAMACPP_HOST", "http://localhost:8080")
 
 parser = argparse.ArgumentParser(description="Run MCQA evaluation for a specific comment level")
 parser.add_argument("--level", type=int, required=True, help="コメントレベル L0〜L7")
 parser.add_argument("--model", type=str, required=True,
-                    help="使用モデル名 (例: gpt-4o / openwebui-llama3:latest / claude-3-sonnet / ollama-llama3:latest)")
+                    help="使用モデル名 (例: gpt-4o / openwebui-llama3:latest / claude-3-sonnet / ollama-llama3:latest / llamacpp-scout-iq3)")
 parser.add_argument("--ollama_host", type=str, default=DEFAULT_OLLAMA_HOST,
                     help=f"Ollama APIのホストURL (デフォルト: 環境変数 OLLAMA_HOST または {DEFAULT_OLLAMA_HOST})")
+parser.add_argument("--llamacpp_host", type=str, default=DEFAULT_LLAMACPP_HOST,
+                    help=f"llama.cpp APIのホストURL (デフォルト: 環境変数 LLAMACPP_HOST または {DEFAULT_LLAMACPP_HOST})")
 args = parser.parse_args()
 
 LEVEL = args.level
@@ -51,6 +54,20 @@ class OllamaClient:
         })
         return response.json().get("response", "").strip()
 
+class LlamacppClient:
+    def __init__(self, host):
+        self.host = host
+
+    def ask(self, prompt, n_predict=256):
+        response = requests.post(f"{self.host}/completion", json={
+            "prompt": prompt,
+            "n_predict": n_predict
+        })
+        try:
+            return response.json().get("content", "").strip()
+        except Exception:
+            return response.text.strip()
+
 # ------------------------------
 # モデル別クライアント設定
 # ------------------------------
@@ -70,6 +87,10 @@ elif MODEL.startswith("ollama-"):
     model_name = MODEL.split("-", 1)[1]
     ollama_client = OllamaClient(host=args.ollama_host)
     target_model = model_name
+
+elif MODEL.startswith("llamacpp-"):
+    llamacpp_client = LlamacppClient(host=args.llamacpp_host)
+    target_model = MODEL.split("-", 1)[1]
 
 else:
     client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
@@ -120,7 +141,7 @@ for i, quiz_path in enumerate(quiz_files, 1):
             f"```c\n{code_block}\n```\n\n"
             f"問題: {quiz['question']}\n{choice_lines}"
         )
-    
+
     start_time = time.time()
     answer_raw = ""
 
@@ -144,6 +165,9 @@ for i, quiz_path in enumerate(quiz_files, 1):
     elif MODEL.startswith("ollama-"):
         answer_raw = ollama_client.ask(target_model, prompt)
 
+    elif MODEL.startswith("llamacpp-"):
+        answer_raw = llamacpp_client.ask(prompt)
+
     else:
         res = client.chat.completions.create(
             model=target_model,
@@ -151,9 +175,10 @@ for i, quiz_path in enumerate(quiz_files, 1):
             temperature=0,
         )
         answer_raw = res.choices[0].message.content.strip()
-        
+
     elapsed_time = round(time.time() - start_time, 2)
 
+    # 回答抽出
     if "deepseek" in MODEL.lower():
         match = re.search(r"(?:解答|答えは|Answer)[:：]?\s*([ABCD])", answer_raw, re.IGNORECASE)
         if match:
