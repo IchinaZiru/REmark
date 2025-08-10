@@ -1,0 +1,10 @@
+{
+  "question": "関数の目的を最も正しく説明している選択肢は？",
+  "choices": [
+    "AddNewReservationScreen 関数は、音楽ライブラリの管理を行うものである。",
+    "AddNewReservationScreen 関数は、新しい予約を作成し、既存の予約リストに追加するためのものである。",
+    "AddNewReservationScreen 関数は、気象データを収集するためのものである。",
+    "AddNewReservationScreen 関数は、新しい予約を作成し、既存の予約リストに追加するものではない。"
+  ],
+  "answer_index": 1
+}
