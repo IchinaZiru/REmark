@@ -1,0 +1,10 @@
+{
+  "question": "関数の目的を最も正しく説明している選択肢は？",
+  "choices": [
+    "ReadUserInfo 関数は、ユーザーのブラウザ履歴を分析して広告を表示する。",
+    "ReadUserInfo 関数は、ユーザーの音声コマンドを解析して音楽を再生する。",
+    "ReadUserInfo 関数は、ユーザーから ID、名前、苗字を入力として受け取り、UserInfo 構造体に保存するが、Next フィールドは設定しない。",
+    "ReadUserInfo 関数は、ユーザーから ID、名前、苗字を入力として受け取り、UserInfo 構造体に格納する。"
+  ],
+  "answer_index": 3
+}
