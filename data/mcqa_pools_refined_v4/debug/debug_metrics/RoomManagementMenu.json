@@ -1,0 +1,12 @@
+{
+  "picked_close": "RoomManagementMenu 関数は、ユーザーが部屋の追加、検索、表示、削除、空室状況の確認を行うためのメニューを提供する。",
+  "picked_far": [
+    "RoomManagementMenu 関数は、天気予報を表示するためのメニューを提供する。",
+    "RoomManagementMenu 関数は、音楽を再生し、停止するためのメニューを提供する。"
+  ],
+  "correct": "RoomManagementMenu 関数は、ユーザーが部屋の追加、検索、表示、削除、利用可能性の確認を行うためのメニューを提供する。",
+  "SIM_CLOSE_MIN": 0.8,
+  "SIM_FAR_MAX": 0.5,
+  "MMR_LAMBDA": 0.55,
+  "legacy_used": true
+}
