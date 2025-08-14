@@ -1,0 +1,12 @@
+{
+  "picked_close": "ReservationManagementMenu 関数は、予約の追加、削除、表示、日付によるソートを行うためのメニューを表示し、ユーザーの選択に応じて適切な機能を呼び出す。",
+  "picked_far": [
+    "写真編集ソフトウェアは、画像のフィルタリングと調整を行うためのツールを提供する。",
+    "WeatherForecast 関数は、現在の天気を表示し、週ごとの予報を提供する。"
+  ],
+  "correct": "ReservationManagementMenu 関数は、予約の追加、削除、表示、日付によるソートを行うためのメニューを表示し、ユーザーの選択に応じて適切な画面を呼び出す。",
+  "SIM_CLOSE_MIN": 0.8,
+  "SIM_FAR_MAX": 0.5,
+  "MMR_LAMBDA": 0.55,
+  "legacy_used": true
+}
