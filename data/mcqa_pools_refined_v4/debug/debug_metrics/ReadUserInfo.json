@@ -1,0 +1,12 @@
+{
+  "picked_close": "ReadUserInfo 関数は、ユーザーから ID、名前、苗字を入力として受け取り、UserInfo 構造体に保存するが、Next フィールドは設定しない。",
+  "picked_far": [
+    "ReadUserInfo 関数は、ユーザーの音声コマンドを解析して音楽を再生する。",
+    "ReadUserInfo 関数は、ユーザーのブラウザ履歴を分析して広告を表示する。"
+  ],
+  "correct": "ReadUserInfo 関数は、ユーザーから ID、名前、苗字を入力として受け取り、UserInfo 構造体に格納する。",
+  "SIM_CLOSE_MIN": 0.8,
+  "SIM_FAR_MAX": 0.5,
+  "MMR_LAMBDA": 0.55,
+  "legacy_used": true
+}
