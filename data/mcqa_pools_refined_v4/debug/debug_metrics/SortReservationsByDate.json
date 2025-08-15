@@ -1,0 +1,12 @@
+{
+  "picked_close": "関数は予約リストを日付順に降順で並べ替える。",
+  "picked_far": [
+    "関数は予約リストをファイルに保存する。",
+    "関数は予約リストを削除する。"
+  ],
+  "correct": "関数は予約リストを日付順に昇順で並べ替える。",
+  "SIM_CLOSE_MIN": 0.8,
+  "SIM_FAR_MAX": 0.5,
+  "MMR_LAMBDA": 0.55,
+  "legacy_used": true
+}
