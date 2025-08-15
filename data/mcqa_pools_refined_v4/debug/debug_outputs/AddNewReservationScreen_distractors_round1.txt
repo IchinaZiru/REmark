@@ -1,0 +1,22 @@
+
+{
+  "distractors": {
+    "close": [
+      "AddNewReservationScreen 関数は、新しい予約を作成し、既存の予約リストに追加するものではない。"
+    ],
+    "medium": [
+      "AddNewReservationScreen 関数は、ユーザー情報を編集するためのものである。",
+      "AddNewReservationScreen 関数は、予約の削除を行うためのものである。",
+      "AddNewReservationScreen 関数は、部屋のリストを更新するためのものである。",
+      "AddNewReservationScreen 関数は、予約の一覧を表示するためのものである。"
+    ],
+    "far": [
+      "AddNewReservationScreen 関数は、気象データを収集するためのものである。",
+      "AddNewReservationScreen 関数は、音楽ライブラリの管理を行うものである。",
+      "AddNewReservationScreen 関数は、eコマースサイトの商品を検索するためのものである。",
+      "AddNewReservationScreen 関数は、ネットワークのトラフィックを監視するためのものである。",
+      "AddNewReservationScreen 関数は、写真を編集するためのものである。",
+      "AddNewReservationScreen 関数は、家計簿を管理するためのものである。"
+    ]
+  }
+}
