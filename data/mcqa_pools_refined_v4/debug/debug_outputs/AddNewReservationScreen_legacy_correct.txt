@@ -1,0 +1,1 @@
+AddNewReservationScreen 関数は、新しい予約を作成し、既存の予約リストに追加するためのものである。
