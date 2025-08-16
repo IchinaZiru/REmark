@@ -1,0 +1,1 @@
+ReadUserInfo 関数は、ユーザーから ID、名前、苗字を入力として受け取り、UserInfo 構造体に格納する。
