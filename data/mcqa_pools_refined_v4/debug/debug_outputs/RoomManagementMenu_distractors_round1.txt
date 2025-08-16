@@ -1,0 +1,21 @@
+{
+  "distractors": {
+    "close": [
+      "RoomManagementMenu 関数は、ユーザーが部屋の追加、検索、表示、削除、空室状況の確認を行うためのメニューを提供する。"
+    ],
+    "medium": [
+      "RoomManagementMenu 関数は、ユーザーが部屋を予約し、予約をキャンセルするためのメニューを提供する。",
+      "RoomManagementMenu 関数は、ユーザーが部屋の情報を更新するためのメニューを提供する。",
+      "RoomManagementMenu 関数は、ユーザーが部屋の価格を設定するためのメニューを提供する。",
+      "RoomManagementMenu 関数は、ユーザーが部屋の清掃状況を確認するためのメニューを提供する。"
+    ],
+    "far": [
+      "RoomManagementMenu 関数は、システムの電源を管理するためのメニューを提供する。",
+      "RoomManagementMenu 関数は、ネットワーク設定を変更するためのメニューを提供する。",
+      "RoomManagementMenu 関数は、ユーザーアカウントを作成し、削除するためのメニューを提供する。",
+      "RoomManagementMenu 関数は、ファイルを圧縮および解凍するためのメニューを提供する。",
+      "RoomManagementMenu 関数は、音楽を再生し、停止するためのメニューを提供する。",
+      "RoomManagementMenu 関数は、天気予報を表示するためのメニューを提供する。"
+    ]
+  }
+}
