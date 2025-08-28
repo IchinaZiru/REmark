@@ -1,0 +1,4 @@
+function,answer,elapsed_time_sec
+IsDate1BeforeDate2,D,1.34
+
+TOTAL_ELAPSED_TIME(sec),2.34
