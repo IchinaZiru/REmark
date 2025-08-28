@@ -1,0 +1,7 @@
+function,answer,elapsed_time_sec
+AddNewReservation,D,1.8
+AddNewReservationScreen,B,0.72
+AddNewRoom,C,2.75
+AddNewRoomScreen,C,3.4
+
+TOTAL_ELAPSED_TIME(sec),12.72
