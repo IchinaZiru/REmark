@@ -1,0 +1,4 @@
+function,answer,elapsed_time_sec
+IsTime1BeforeTime2,C,32.01
+
+TOTAL_ELAPSED_TIME(sec),33.01
