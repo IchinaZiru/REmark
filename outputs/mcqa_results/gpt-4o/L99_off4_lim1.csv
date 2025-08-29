@@ -1,0 +1,4 @@
+function,answer,elapsed_time_sec
+AddNewUser,A,1.41
+
+TOTAL_ELAPSED_TIME(sec),2.41
