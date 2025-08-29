@@ -1,0 +1,4 @@
+function,answer,elapsed_time_sec
+CheckRoomAvailabilityScreen,A,1.2
+
+TOTAL_ELAPSED_TIME(sec),2.2
