@@ -1,0 +1,12 @@
+function,answer,elapsed_time_sec
+CheckRoomAvailabilityScreen,A,1.46
+DeleteReservationByID,A,0.73
+DeleteRoomByID,C,0.78
+DisplayReservationCard,A,0.66
+DisplayUserCard,B,0.51
+ReadIntBetween,A,1.37
+ReservationManagementMenu,C,0.7
+SearchUserByFirstNameScreen,C,0.78
+main,C,0.74
+
+TOTAL_ELAPSED_TIME(sec),16.82
