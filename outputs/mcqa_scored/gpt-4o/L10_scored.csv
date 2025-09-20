@@ -1,0 +1,10 @@
+function,predicted,correct,is_correct,note
+CheckRoomAvailabilityScreen,C,C,True,
+DeleteReservationByID,A,A,True,
+DeleteRoomByID,C,C,True,
+DisplayReservationCard,A,D,False,
+DisplayUserCard,D,D,True,
+ReadIntBetween,A,D,False,
+ReservationManagementMenu,D,D,True,
+SearchUserByFirstNameScreen,C,C,True,
+main,C,C,True,
