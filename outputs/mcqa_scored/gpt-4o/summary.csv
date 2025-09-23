@@ -1,0 +1,2 @@
+level,model,accuracy,num_total,num_correct,num_incorrect,num_missing,pool_dir
+10,gpt-4o,0.7777777777777778,9,7,2,0,data\mcqa_pools_L10
