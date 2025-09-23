@@ -1,0 +1,5 @@
+file,n_close_cand,n_far_cand
+AddNewReservationScreen.json,1,0
+DisplayReservationsScreen.json,0,2
+ReadUserInfo.json,1,0
+RoomManagementMenu.json,1,0
