@@ -1,0 +1,17 @@
+﻿"level","model","function","predicted","correct","is_correct","source_file","function_def_line","signature","leading_comment"
+"L0","gpt-4o","DeleteReservationByID","B","A","False","data\levels\L0\Meeting_Room_Reservation_System_L0.c","720","ReservationPtr DeleteReservationByID(ReservationPtr ReservationList, int ID)
+{",""
+"L0","gpt-4o","DeleteRoomByID","D","C","False","data\levels\L0\Meeting_Room_Reservation_System_L0.c","502","RoomPtr DeleteRoomByID(RoomPtr RoomList, int ID)
+{",""
+"L0","gpt-4o","DisplayReservationCard","A","D","False","data\levels\L0\Meeting_Room_Reservation_System_L0.c","693","void DisplayReservationCard(ReservationPtr Reservation)
+{","// =========================================================================== Reservation Management ==========================================================================="
+"L0","gpt-4o","DisplayUserCard","B","D","False","data\levels\L0\Meeting_Room_Reservation_System_L0.c","194","void DisplayUserCard(UserPtr User)
+{","// =========================================================================== User Management ==========================================================================="
+"L0","gpt-4o","ReadIntBetween","A","D","False","data\levels\L0\Meeting_Room_Reservation_System_L0.c","74","int ReadIntBetween(int from, int to)
+{",""
+"L0","gpt-4o","ReservationManagementMenu","C","D","False","data\levels\L0\Meeting_Room_Reservation_System_L0.c","939","void ReservationManagementMenu(ReservationPtr *ReservationList, UserPtr UserList, RoomPtr *RoomList)
+{",""
+"L0","gpt-4o","SearchUserByFirstNameScreen","A","C","False","data\levels\L0\Meeting_Room_Reservation_System_L0.c","298","void SearchUserByFirstNameScreen(UserPtr UserList)
+{",""
+"L0","gpt-4o","main","D","C","False","data\levels\L0\Meeting_Room_Reservation_System_L0.c","187","int main()
+{",""
