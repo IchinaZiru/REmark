@@ -1,0 +1,25 @@
+﻿"level","model","function","predicted","correct","is_correct","source_file","function_def_line","signature","leading_comment"
+"L3","gpt-4o","DeleteReservationByID","B","A","False","data\levels\L3\Meeting_Room_Reservation_System_L3.c","834","ReservationPtr DeleteReservationByID(ReservationPtr ReservationList, int ID)
+{","// [Logical] この関数は、予約リストから指定されたIDの予約を削除します。
+// [Precise] リストを順に走査し、指定されたIDと一致する予約を見つけたら、そのノードをリストから削除します。
+// [Unambiguous] 指定されたIDの予約を見つけた場合、そのノードをリストから削除し、メモリを解放します。"
+"L3","gpt-4o","DeleteRoomByID","D","C","False","data\levels\L3\Meeting_Room_Reservation_System_L3.c","586","RoomPtr DeleteRoomByID(RoomPtr RoomList, int ID)
+{","// [Logical] この関数は、リンクリストから指定されたIDの部屋を削除します。
+// [Precise] リストを先頭から順に探索し、指定されたIDの部屋を見つけたら、そのノードをリストから削除し、メモリを解放します。
+// [Unambiguous] 関数は、指定されたIDを持つノードを見つけて削除し、リストの先頭が削除された場合も考慮しています。"
+"L3","gpt-4o","ReadIntBetween","A","D","False","data\levels\L3\Meeting_Room_Reservation_System_L3.c","83","int ReadIntBetween(int from, int to)
+{","// [Logical] この関数は、指定された範囲内の整数をユーザーから入力として取得します。
+// [Precise] ユーザーから整数を入力させ、その値が指定された範囲内に収まるまで再入力を促します。
+// [Unambiguous] ユーザーが入力した整数が範囲外の場合、範囲内の整数が入力されるまで再度入力を求めます。"
+"L3","gpt-4o","ReservationManagementMenu","C","D","False","data\levels\L3\Meeting_Room_Reservation_System_L3.c","1083","void ReservationManagementMenu(ReservationPtr *ReservationList, UserPtr UserList, RoomPtr *RoomList)
+{","// [Logical] この関数は予約管理メニューを表示し、ユーザーの選択に応じた操作を実行します。
+// [Precise] メニューを表示し、ユーザーの選択を受け取り、選択に応じて予約の追加、削除、表示、日付でのソートを行います。
+// [Unambiguous] ユーザーが1から5の選択肢を入力し、その選択に基づいて対応する予約管理操作を実行します。"
+"L3","gpt-4o","SearchUserByFirstNameScreen","A","C","False","data\levels\L3\Meeting_Room_Reservation_System_L3.c","352","void SearchUserByFirstNameScreen(UserPtr UserList)
+{","// [Logical] この関数は、ユーザーのリストから指定された名前を持つユーザーを検索し、結果を表示します。
+// [Precise] ユーザーに名前の入力を求め、その名前でユーザーリストを検索し、結果を表示します。
+// [Unambiguous] 入力された名前でユーザーリストを検索し、見つからなければメッセージを表示します。"
+"L3","gpt-4o","main","D","C","False","data\levels\L3\Meeting_Room_Reservation_System_L3.c","217","int main()
+{","// [Logical] この関数はプログラムのエントリーポイントとして、メインメニューを表示するために呼び出されます。
+// [Precise] MainMenu関数を呼び出し、その後プログラムを終了します。
+// [Unambiguous] プログラム開始時にMainMenu関数を実行し、終了コード0を返します。"
