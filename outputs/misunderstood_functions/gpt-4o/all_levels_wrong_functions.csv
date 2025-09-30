@@ -1,0 +1,387 @@
+﻿"level","model","function","predicted","correct","is_correct","source_file","function_def_line","signature","leading_comment"
+"L0","gpt-4o","DeleteReservationByID","B","A","False","data\levels\L0\Meeting_Room_Reservation_System_L0.c","720","ReservationPtr DeleteReservationByID(ReservationPtr ReservationList, int ID)
+{",""
+"L0","gpt-4o","DeleteRoomByID","D","C","False","data\levels\L0\Meeting_Room_Reservation_System_L0.c","502","RoomPtr DeleteRoomByID(RoomPtr RoomList, int ID)
+{",""
+"L0","gpt-4o","DisplayReservationCard","A","D","False","data\levels\L0\Meeting_Room_Reservation_System_L0.c","693","void DisplayReservationCard(ReservationPtr Reservation)
+{","// =========================================================================== Reservation Management ==========================================================================="
+"L0","gpt-4o","DisplayUserCard","B","D","False","data\levels\L0\Meeting_Room_Reservation_System_L0.c","194","void DisplayUserCard(UserPtr User)
+{","// =========================================================================== User Management ==========================================================================="
+"L0","gpt-4o","ReadIntBetween","A","D","False","data\levels\L0\Meeting_Room_Reservation_System_L0.c","74","int ReadIntBetween(int from, int to)
+{",""
+"L0","gpt-4o","ReservationManagementMenu","C","D","False","data\levels\L0\Meeting_Room_Reservation_System_L0.c","939","void ReservationManagementMenu(ReservationPtr *ReservationList, UserPtr UserList, RoomPtr *RoomList)
+{",""
+"L0","gpt-4o","SearchUserByFirstNameScreen","A","C","False","data\levels\L0\Meeting_Room_Reservation_System_L0.c","298","void SearchUserByFirstNameScreen(UserPtr UserList)
+{",""
+"L0","gpt-4o","main","D","C","False","data\levels\L0\Meeting_Room_Reservation_System_L0.c","187","int main()
+{",""
+"L1","gpt-4o","DeleteReservationByID","B","A","False","data\levels\L1\Meeting_Room_Reservation_System_L1.c","758","ReservationPtr DeleteReservationByID(ReservationPtr ReservationList, int ID)
+{","// [Logical] この関数は、予約リストから指定されたIDの予約を削除します。"
+"L1","gpt-4o","DeleteRoomByID","D","C","False","data\levels\L1\Meeting_Room_Reservation_System_L1.c","530","RoomPtr DeleteRoomByID(RoomPtr RoomList, int ID)
+{","// [Logical] この関数は、リンクリストから指定されたIDの部屋を削除します。"
+"L1","gpt-4o","DisplayUserCard","B","D","False","data\levels\L1\Meeting_Room_Reservation_System_L1.c","205","void DisplayUserCard(UserPtr User)
+{","// =========================================================================== User Management ===========================================================================
+// [Logical] この関数は、ユーザーの情報をフォーマットしてコンソールに表示します。"
+"L1","gpt-4o","ReadIntBetween","A","D","False","data\levels\L1\Meeting_Room_Reservation_System_L1.c","77","int ReadIntBetween(int from, int to)
+{","// [Logical] この関数は、指定された範囲内の整数をユーザーから入力として取得します。"
+"L1","gpt-4o","ReservationManagementMenu","C","D","False","data\levels\L1\Meeting_Room_Reservation_System_L1.c","987","void ReservationManagementMenu(ReservationPtr *ReservationList, UserPtr UserList, RoomPtr *RoomList)
+{","// [Logical] この関数は予約管理メニューを表示し、ユーザーの選択に応じた操作を実行します。"
+"L1","gpt-4o","SearchUserByFirstNameScreen","A","C","False","data\levels\L1\Meeting_Room_Reservation_System_L1.c","316","void SearchUserByFirstNameScreen(UserPtr UserList)
+{","// [Logical] この関数は、ユーザーのリストから指定された名前を持つユーザーを検索し、結果を表示します。"
+"L1","gpt-4o","main","D","C","False","data\levels\L1\Meeting_Room_Reservation_System_L1.c","197","int main()
+{","// [Logical] この関数はプログラムのエントリーポイントとして、メインメニューを表示するために呼び出されます。"
+"L2","gpt-4o","DeleteReservationByID","B","A","False","data\levels\L2\Meeting_Room_Reservation_System_L2.c","796","ReservationPtr DeleteReservationByID(ReservationPtr ReservationList, int ID)
+{","// [Logical] この関数は、予約リストから指定されたIDの予約を削除します。
+// [Precise] リストを順に走査し、指定されたIDと一致する予約を見つけたら、そのノードをリストから削除します。"
+"L2","gpt-4o","DeleteRoomByID","D","C","False","data\levels\L2\Meeting_Room_Reservation_System_L2.c","558","RoomPtr DeleteRoomByID(RoomPtr RoomList, int ID)
+{","// [Logical] この関数は、リンクリストから指定されたIDの部屋を削除します。
+// [Precise] リストを先頭から順に探索し、指定されたIDの部屋を見つけたら、そのノードをリストから削除し、メモリを解放します。"
+"L2","gpt-4o","ReadIntBetween","A","D","False","data\levels\L2\Meeting_Room_Reservation_System_L2.c","80","int ReadIntBetween(int from, int to)
+{","// [Logical] この関数は、指定された範囲内の整数をユーザーから入力として取得します。
+// [Precise] ユーザーから整数を入力させ、その値が指定された範囲内に収まるまで再入力を促します。"
+"L2","gpt-4o","ReservationManagementMenu","C","D","False","data\levels\L2\Meeting_Room_Reservation_System_L2.c","1035","void ReservationManagementMenu(ReservationPtr *ReservationList, UserPtr UserList, RoomPtr *RoomList)
+{","// [Logical] この関数は予約管理メニューを表示し、ユーザーの選択に応じた操作を実行します。
+// [Precise] メニューを表示し、ユーザーの選択を受け取り、選択に応じて予約の追加、削除、表示、日付でのソートを行います。"
+"L2","gpt-4o","SearchUserByFirstNameScreen","A","C","False","data\levels\L2\Meeting_Room_Reservation_System_L2.c","334","void SearchUserByFirstNameScreen(UserPtr UserList)
+{","// [Logical] この関数は、ユーザーのリストから指定された名前を持つユーザーを検索し、結果を表示します。
+// [Precise] ユーザーに名前の入力を求め、その名前でユーザーリストを検索し、結果を表示します。"
+"L2","gpt-4o","main","D","C","False","data\levels\L2\Meeting_Room_Reservation_System_L2.c","207","int main()
+{","// [Logical] この関数はプログラムのエントリーポイントとして、メインメニューを表示するために呼び出されます。
+// [Precise] MainMenu関数を呼び出し、その後プログラムを終了します。"
+"L3","gpt-4o","DeleteReservationByID","B","A","False","data\levels\L3\Meeting_Room_Reservation_System_L3.c","834","ReservationPtr DeleteReservationByID(ReservationPtr ReservationList, int ID)
+{","// [Logical] この関数は、予約リストから指定されたIDの予約を削除します。
+// [Precise] リストを順に走査し、指定されたIDと一致する予約を見つけたら、そのノードをリストから削除します。
+// [Unambiguous] 指定されたIDの予約を見つけた場合、そのノードをリストから削除し、メモリを解放します。"
+"L3","gpt-4o","DeleteRoomByID","D","C","False","data\levels\L3\Meeting_Room_Reservation_System_L3.c","586","RoomPtr DeleteRoomByID(RoomPtr RoomList, int ID)
+{","// [Logical] この関数は、リンクリストから指定されたIDの部屋を削除します。
+// [Precise] リストを先頭から順に探索し、指定されたIDの部屋を見つけたら、そのノードをリストから削除し、メモリを解放します。
+// [Unambiguous] 関数は、指定されたIDを持つノードを見つけて削除し、リストの先頭が削除された場合も考慮しています。"
+"L3","gpt-4o","ReadIntBetween","A","D","False","data\levels\L3\Meeting_Room_Reservation_System_L3.c","83","int ReadIntBetween(int from, int to)
+{","// [Logical] この関数は、指定された範囲内の整数をユーザーから入力として取得します。
+// [Precise] ユーザーから整数を入力させ、その値が指定された範囲内に収まるまで再入力を促します。
+// [Unambiguous] ユーザーが入力した整数が範囲外の場合、範囲内の整数が入力されるまで再度入力を求めます。"
+"L3","gpt-4o","ReservationManagementMenu","C","D","False","data\levels\L3\Meeting_Room_Reservation_System_L3.c","1083","void ReservationManagementMenu(ReservationPtr *ReservationList, UserPtr UserList, RoomPtr *RoomList)
+{","// [Logical] この関数は予約管理メニューを表示し、ユーザーの選択に応じた操作を実行します。
+// [Precise] メニューを表示し、ユーザーの選択を受け取り、選択に応じて予約の追加、削除、表示、日付でのソートを行います。
+// [Unambiguous] ユーザーが1から5の選択肢を入力し、その選択に基づいて対応する予約管理操作を実行します。"
+"L3","gpt-4o","SearchUserByFirstNameScreen","A","C","False","data\levels\L3\Meeting_Room_Reservation_System_L3.c","352","void SearchUserByFirstNameScreen(UserPtr UserList)
+{","// [Logical] この関数は、ユーザーのリストから指定された名前を持つユーザーを検索し、結果を表示します。
+// [Precise] ユーザーに名前の入力を求め、その名前でユーザーリストを検索し、結果を表示します。
+// [Unambiguous] 入力された名前でユーザーリストを検索し、見つからなければメッセージを表示します。"
+"L3","gpt-4o","main","D","C","False","data\levels\L3\Meeting_Room_Reservation_System_L3.c","217","int main()
+{","// [Logical] この関数はプログラムのエントリーポイントとして、メインメニューを表示するために呼び出されます。
+// [Precise] MainMenu関数を呼び出し、その後プログラムを終了します。
+// [Unambiguous] プログラム開始時にMainMenu関数を実行し、終了コード0を返します。"
+"L4","gpt-4o","DeleteReservationByID","B","A","False","data\levels\L4\Meeting_Room_Reservation_System_L4.c","872","ReservationPtr DeleteReservationByID(ReservationPtr ReservationList, int ID)
+{","// [Logical] この関数は、予約リストから指定されたIDの予約を削除します。
+// [Precise] リストを順に走査し、指定されたIDと一致する予約を見つけたら、そのノードをリストから削除します。
+// [Unambiguous] 指定されたIDの予約を見つけた場合、そのノードをリストから削除し、メモリを解放します。
+// [Exhaustive] 指定されたIDの予約が見つかると削除され、リストの先頭が変更される可能性があります。見つからない場合はリストは変更されません。"
+"L4","gpt-4o","DeleteRoomByID","D","C","False","data\levels\L4\Meeting_Room_Reservation_System_L4.c","614","RoomPtr DeleteRoomByID(RoomPtr RoomList, int ID)
+{","// [Logical] この関数は、リンクリストから指定されたIDの部屋を削除します。
+// [Precise] リストを先頭から順に探索し、指定されたIDの部屋を見つけたら、そのノードをリストから削除し、メモリを解放します。
+// [Unambiguous] 関数は、指定されたIDを持つノードを見つけて削除し、リストの先頭が削除された場合も考慮しています。
+// [Exhaustive] 削除されたノードのメモリを解放し、更新されたリストの先頭を返しますが、IDが見つからない場合の処理はありません。"
+"L4","gpt-4o","DisplayReservationCard","A","D","False","data\levels\L4\Meeting_Room_Reservation_System_L4.c","837","void DisplayReservationCard(ReservationPtr Reservation)
+{","// =========================================================================== Reservation Management ===========================================================================
+
+// [Logical] この関数は予約情報をフォーマットして表示します。
+// [Precise] 予約情報の各フィールドを取得し、フォーマットされた文字列として標準出力に表示します。
+// [Unambiguous] Reservation構造体のメンバーを使用して、予約の詳細を明確に表示します。
+// [Exhaustive] この関数は出力を行うだけで、戻り値はなく、他のシステムへの影響もありません。"
+"L4","gpt-4o","ReadIntBetween","A","D","False","data\levels\L4\Meeting_Room_Reservation_System_L4.c","86","int ReadIntBetween(int from, int to)
+{","// [Logical] この関数は、指定された範囲内の整数をユーザーから入力として取得します。
+// [Precise] ユーザーから整数を入力させ、その値が指定された範囲内に収まるまで再入力を促します。
+// [Unambiguous] ユーザーが入力した整数が範囲外の場合、範囲内の整数が入力されるまで再度入力を求めます。
+// [Exhaustive] 範囲内の整数が入力されると、その整数を返します。範囲外の入力があった場合は再入力を促します。"
+"L4","gpt-4o","ReservationManagementMenu","C","D","False","data\levels\L4\Meeting_Room_Reservation_System_L4.c","1131","void ReservationManagementMenu(ReservationPtr *ReservationList, UserPtr UserList, RoomPtr *RoomList)
+{","// [Logical] この関数は予約管理メニューを表示し、ユーザーの選択に応じた操作を実行します。
+// [Precise] メニューを表示し、ユーザーの選択を受け取り、選択に応じて予約の追加、削除、表示、日付でのソートを行います。
+// [Unambiguous] ユーザーが1から5の選択肢を入力し、その選択に基づいて対応する予約管理操作を実行します。
+// [Exhaustive] 1から4の選択肢はそれぞれ予約追加、削除、表示、ソートを行い、5はメニューを終了します。範囲外の選択はエラーメッセージを表示します。"
+"L4","gpt-4o","SearchUserByFirstNameScreen","A","C","False","data\levels\L4\Meeting_Room_Reservation_System_L4.c","370","void SearchUserByFirstNameScreen(UserPtr UserList)
+{","// [Logical] この関数は、ユーザーのリストから指定された名前を持つユーザーを検索し、結果を表示します。
+// [Precise] ユーザーに名前の入力を求め、その名前でユーザーリストを検索し、結果を表示します。
+// [Unambiguous] 入力された名前でユーザーリストを検索し、見つからなければメッセージを表示します。
+// [Exhaustive] ユーザーが見つかった場合は何も表示せず、見つからなければ「User not Found!」と表示します。"
+"L5","gpt-4o","DeleteReservationByID","B","A","False","data\levels\L5\Meeting_Room_Reservation_System_L5.c","910","ReservationPtr DeleteReservationByID(ReservationPtr ReservationList, int ID)
+{","// [Logical] この関数は、予約リストから指定されたIDの予約を削除します。
+// [Precise] リストを順に走査し、指定されたIDと一致する予約を見つけたら、そのノードをリストから削除します。
+// [Unambiguous] 指定されたIDの予約を見つけた場合、そのノードをリストから削除し、メモリを解放します。
+// [Exhaustive] 指定されたIDの予約が見つかると削除され、リストの先頭が変更される可能性があります。見つからない場合はリストは変更されません。
+// [Troubleshooting] 削除する予約が見つからない場合、リストはそのまま返され、特にエラー処理は行われません。"
+"L5","gpt-4o","DeleteRoomByID","D","C","False","data\levels\L5\Meeting_Room_Reservation_System_L5.c","642","RoomPtr DeleteRoomByID(RoomPtr RoomList, int ID)
+{","// [Logical] この関数は、リンクリストから指定されたIDの部屋を削除します。
+// [Precise] リストを先頭から順に探索し、指定されたIDの部屋を見つけたら、そのノードをリストから削除し、メモリを解放します。
+// [Unambiguous] 関数は、指定されたIDを持つノードを見つけて削除し、リストの先頭が削除された場合も考慮しています。
+// [Exhaustive] 削除されたノードのメモリを解放し、更新されたリストの先頭を返しますが、IDが見つからない場合の処理はありません。
+// [Troubleshooting] IDが見つからない場合、関数は何も削除せず、リストの先頭をそのまま返します。"
+"L5","gpt-4o","ReadIntBetween","A","D","False","data\levels\L5\Meeting_Room_Reservation_System_L5.c","89","int ReadIntBetween(int from, int to)
+{","// [Logical] この関数は、指定された範囲内の整数をユーザーから入力として取得します。
+// [Precise] ユーザーから整数を入力させ、その値が指定された範囲内に収まるまで再入力を促します。
+// [Unambiguous] ユーザーが入力した整数が範囲外の場合、範囲内の整数が入力されるまで再度入力を求めます。
+// [Exhaustive] 範囲内の整数が入力されると、その整数を返します。範囲外の入力があった場合は再入力を促します。
+// [Troubleshooting] 範囲外の入力があった場合、範囲内の整数が入力されるまでプロンプトを表示し続けます。"
+"L5","gpt-4o","ReservationManagementMenu","C","D","False","data\levels\L5\Meeting_Room_Reservation_System_L5.c","1179","void ReservationManagementMenu(ReservationPtr *ReservationList, UserPtr UserList, RoomPtr *RoomList)
+{","// [Logical] この関数は予約管理メニューを表示し、ユーザーの選択に応じた操作を実行します。
+// [Precise] メニューを表示し、ユーザーの選択を受け取り、選択に応じて予約の追加、削除、表示、日付でのソートを行います。
+// [Unambiguous] ユーザーが1から5の選択肢を入力し、その選択に基づいて対応する予約管理操作を実行します。
+// [Exhaustive] 1から4の選択肢はそれぞれ予約追加、削除、表示、ソートを行い、5はメニューを終了します。範囲外の選択はエラーメッセージを表示します。
+// [Troubleshooting] 無効な選択肢を入力した場合はエラーメッセージを表示し、再度選択を促します。"
+"L5","gpt-4o","SearchUserByFirstNameScreen","A","C","False","data\levels\L5\Meeting_Room_Reservation_System_L5.c","388","void SearchUserByFirstNameScreen(UserPtr UserList)
+{","// [Logical] この関数は、ユーザーのリストから指定された名前を持つユーザーを検索し、結果を表示します。
+// [Precise] ユーザーに名前の入力を求め、その名前でユーザーリストを検索し、結果を表示します。
+// [Unambiguous] 入力された名前でユーザーリストを検索し、見つからなければメッセージを表示します。
+// [Exhaustive] ユーザーが見つかった場合は何も表示せず、見つからなければ「User not Found!」と表示します。
+// [Troubleshooting] 入力エラーや検索エラーに対する具体的な対処はありませんが、ユーザーが見つからない場合にメッセージを表示します。"
+"L5","gpt-4o","main","D","C","False","data\levels\L5\Meeting_Room_Reservation_System_L5.c","237","int main()
+{","// [Logical] この関数はプログラムのエントリーポイントとして、メインメニューを表示するために呼び出されます。
+// [Precise] MainMenu関数を呼び出し、その後プログラムを終了します。
+// [Unambiguous] プログラム開始時にMainMenu関数を実行し、終了コード0を返します。
+// [Exhaustive] MainMenu関数の実行後、正常終了を示す0を返します。
+// [Troubleshooting] この関数自体はエラー処理を行いませんが、MainMenu関数内でのエラー処理が必要です。"
+"L6","gpt-4o","DeleteReservationByID","B","A","False","data\levels\L6\Meeting_Room_Reservation_System_L6.c","948","ReservationPtr DeleteReservationByID(ReservationPtr ReservationList, int ID)
+{","// [Logical] この関数は、予約リストから指定されたIDの予約を削除します。
+// [Precise] リストを順に走査し、指定されたIDと一致する予約を見つけたら、そのノードをリストから削除します。
+// [Unambiguous] 指定されたIDの予約を見つけた場合、そのノードをリストから削除し、メモリを解放します。
+// [Exhaustive] 指定されたIDの予約が見つかると削除され、リストの先頭が変更される可能性があります。見つからない場合はリストは変更されません。
+// [Troubleshooting] 削除する予約が見つからない場合、リストはそのまま返され、特にエラー処理は行われません。
+// [Contextualizing] この関数は、予約管理システムなどで、特定の予約を削除する際に使用されます。"
+"L6","gpt-4o","DeleteRoomByID","D","C","False","data\levels\L6\Meeting_Room_Reservation_System_L6.c","670","RoomPtr DeleteRoomByID(RoomPtr RoomList, int ID)
+{","// [Logical] この関数は、リンクリストから指定されたIDの部屋を削除します。
+// [Precise] リストを先頭から順に探索し、指定されたIDの部屋を見つけたら、そのノードをリストから削除し、メモリを解放します。
+// [Unambiguous] 関数は、指定されたIDを持つノードを見つけて削除し、リストの先頭が削除された場合も考慮しています。
+// [Exhaustive] 削除されたノードのメモリを解放し、更新されたリストの先頭を返しますが、IDが見つからない場合の処理はありません。
+// [Troubleshooting] IDが見つからない場合、関数は何も削除せず、リストの先頭をそのまま返します。
+// [Contextualizing] この関数は、部屋の情報を管理するアプリケーションで、特定の部屋をリストから削除する際に使用されます。"
+"L6","gpt-4o","DisplayReservationCard","A","D","False","data\levels\L6\Meeting_Room_Reservation_System_L6.c","909","void DisplayReservationCard(ReservationPtr Reservation)
+{","// =========================================================================== Reservation Management ===========================================================================
+
+// [Logical] この関数は予約情報をフォーマットして表示します。
+// [Precise] 予約情報の各フィールドを取得し、フォーマットされた文字列として標準出力に表示します。
+// [Unambiguous] Reservation構造体のメンバーを使用して、予約の詳細を明確に表示します。
+// [Exhaustive] この関数は出力を行うだけで、戻り値はなく、他のシステムへの影響もありません。
+// [Troubleshooting] ReservationがNULLの場合、プログラムがクラッシュする可能性があるため、NULLチェックを追加することが推奨されます。
+// [Contextualizing] この関数は、予約管理システムで予約の詳細をユーザーに表示する際に使用されます。"
+"L6","gpt-4o","ReadIntBetween","A","D","False","data\levels\L6\Meeting_Room_Reservation_System_L6.c","92","int ReadIntBetween(int from, int to)
+{","// [Logical] この関数は、指定された範囲内の整数をユーザーから入力として取得します。
+// [Precise] ユーザーから整数を入力させ、その値が指定された範囲内に収まるまで再入力を促します。
+// [Unambiguous] ユーザーが入力した整数が範囲外の場合、範囲内の整数が入力されるまで再度入力を求めます。
+// [Exhaustive] 範囲内の整数が入力されると、その整数を返します。範囲外の入力があった場合は再入力を促します。
+// [Troubleshooting] 範囲外の入力があった場合、範囲内の整数が入力されるまでプロンプトを表示し続けます。
+// [Contextualizing] この関数は、ユーザーから特定の範囲内の整数入力を必要とする場面で使用されます。"
+"L6","gpt-4o","ReservationManagementMenu","C","D","False","data\levels\L6\Meeting_Room_Reservation_System_L6.c","1227","void ReservationManagementMenu(ReservationPtr *ReservationList, UserPtr UserList, RoomPtr *RoomList)
+{","// [Logical] この関数は予約管理メニューを表示し、ユーザーの選択に応じた操作を実行します。
+// [Precise] メニューを表示し、ユーザーの選択を受け取り、選択に応じて予約の追加、削除、表示、日付でのソートを行います。
+// [Unambiguous] ユーザーが1から5の選択肢を入力し、その選択に基づいて対応する予約管理操作を実行します。
+// [Exhaustive] 1から4の選択肢はそれぞれ予約追加、削除、表示、ソートを行い、5はメニューを終了します。範囲外の選択はエラーメッセージを表示します。
+// [Troubleshooting] 無効な選択肢を入力した場合はエラーメッセージを表示し、再度選択を促します。
+// [Contextualizing] この関数は予約管理システムの一部として、ユーザーが予約を管理する際に使用されます。"
+"L6","gpt-4o","SearchUserByFirstNameScreen","A","C","False","data\levels\L6\Meeting_Room_Reservation_System_L6.c","406","void SearchUserByFirstNameScreen(UserPtr UserList)
+{","// [Logical] この関数は、ユーザーのリストから指定された名前を持つユーザーを検索し、結果を表示します。
+// [Precise] ユーザーに名前の入力を求め、その名前でユーザーリストを検索し、結果を表示します。
+// [Unambiguous] 入力された名前でユーザーリストを検索し、見つからなければメッセージを表示します。
+// [Exhaustive] ユーザーが見つかった場合は何も表示せず、見つからなければ「User not Found!」と表示します。
+// [Troubleshooting] 入力エラーや検索エラーに対する具体的な対処はありませんが、ユーザーが見つからない場合にメッセージを表示します。
+// [Contextualizing] ユーザー情報を管理するシステム内で、特定のユーザーを名前で検索するために使用されます。"
+"L6","gpt-4o","main","D","C","False","data\levels\L6\Meeting_Room_Reservation_System_L6.c","247","int main()
+{","// [Logical] この関数はプログラムのエントリーポイントとして、メインメニューを表示するために呼び出されます。
+// [Precise] MainMenu関数を呼び出し、その後プログラムを終了します。
+// [Unambiguous] プログラム開始時にMainMenu関数を実行し、終了コード0を返します。
+// [Exhaustive] MainMenu関数の実行後、正常終了を示す0を返します。
+// [Troubleshooting] この関数自体はエラー処理を行いませんが、MainMenu関数内でのエラー処理が必要です。
+// [Contextualizing] この関数はC言語プログラムの開始地点として、ユーザーにメインメニューを提示する際に使用されます。"
+"L7","gpt-4o","DeleteReservationByID","B","A","False","data\levels\L7\Meeting_Room_Reservation_System_L7.c","986","ReservationPtr DeleteReservationByID(ReservationPtr ReservationList, int ID)
+{","// [Logical] この関数は、予約リストから指定されたIDの予約を削除します。
+// [Precise] リストを順に走査し、指定されたIDと一致する予約を見つけたら、そのノードをリストから削除します。
+// [Unambiguous] 指定されたIDの予約を見つけた場合、そのノードをリストから削除し、メモリを解放します。
+// [Exhaustive] 指定されたIDの予約が見つかると削除され、リストの先頭が変更される可能性があります。見つからない場合はリストは変更されません。
+// [Troubleshooting] 削除する予約が見つからない場合、リストはそのまま返され、特にエラー処理は行われません。
+// [Contextualizing] この関数は、予約管理システムなどで、特定の予約を削除する際に使用されます。
+// [Condensing] 指定されたIDの予約をリストから削除し、メモリを解放します。"
+"L7","gpt-4o","DeleteRoomByID","D","C","False","data\levels\L7\Meeting_Room_Reservation_System_L7.c","698","RoomPtr DeleteRoomByID(RoomPtr RoomList, int ID)
+{","// [Logical] この関数は、リンクリストから指定されたIDの部屋を削除します。
+// [Precise] リストを先頭から順に探索し、指定されたIDの部屋を見つけたら、そのノードをリストから削除し、メモリを解放します。
+// [Unambiguous] 関数は、指定されたIDを持つノードを見つけて削除し、リストの先頭が削除された場合も考慮しています。
+// [Exhaustive] 削除されたノードのメモリを解放し、更新されたリストの先頭を返しますが、IDが見つからない場合の処理はありません。
+// [Troubleshooting] IDが見つからない場合、関数は何も削除せず、リストの先頭をそのまま返します。
+// [Contextualizing] この関数は、部屋の情報を管理するアプリケーションで、特定の部屋をリストから削除する際に使用されます。
+// [Condensing] 指定されたIDの部屋をリンクリストから削除し、メモリを解放して更新されたリストを返します。"
+"L7","gpt-4o","ReadIntBetween","A","D","False","data\levels\L7\Meeting_Room_Reservation_System_L7.c","95","int ReadIntBetween(int from, int to)
+{","// [Logical] この関数は、指定された範囲内の整数をユーザーから入力として取得します。
+// [Precise] ユーザーから整数を入力させ、その値が指定された範囲内に収まるまで再入力を促します。
+// [Unambiguous] ユーザーが入力した整数が範囲外の場合、範囲内の整数が入力されるまで再度入力を求めます。
+// [Exhaustive] 範囲内の整数が入力されると、その整数を返します。範囲外の入力があった場合は再入力を促します。
+// [Troubleshooting] 範囲外の入力があった場合、範囲内の整数が入力されるまでプロンプトを表示し続けます。
+// [Contextualizing] この関数は、ユーザーから特定の範囲内の整数入力を必要とする場面で使用されます。
+// [Condensing] ユーザーから指定された範囲内の整数を取得し、範囲外の場合は再入力を促します。"
+"L7","gpt-4o","ReservationManagementMenu","C","D","False","data\levels\L7\Meeting_Room_Reservation_System_L7.c","1275","void ReservationManagementMenu(ReservationPtr *ReservationList, UserPtr UserList, RoomPtr *RoomList)
+{","// [Logical] この関数は予約管理メニューを表示し、ユーザーの選択に応じた操作を実行します。
+// [Precise] メニューを表示し、ユーザーの選択を受け取り、選択に応じて予約の追加、削除、表示、日付でのソートを行います。
+// [Unambiguous] ユーザーが1から5の選択肢を入力し、その選択に基づいて対応する予約管理操作を実行します。
+// [Exhaustive] 1から4の選択肢はそれぞれ予約追加、削除、表示、ソートを行い、5はメニューを終了します。範囲外の選択はエラーメッセージを表示します。
+// [Troubleshooting] 無効な選択肢を入力した場合はエラーメッセージを表示し、再度選択を促します。
+// [Contextualizing] この関数は予約管理システムの一部として、ユーザーが予約を管理する際に使用されます。
+// [Condensing] 予約管理メニューを表示し、ユーザーの選択に基づいて予約操作を実行する関数です。"
+"L7","gpt-4o","SearchUserByFirstNameScreen","A","C","False","data\levels\L7\Meeting_Room_Reservation_System_L7.c","424","void SearchUserByFirstNameScreen(UserPtr UserList)
+{","// [Logical] この関数は、ユーザーのリストから指定された名前を持つユーザーを検索し、結果を表示します。
+// [Precise] ユーザーに名前の入力を求め、その名前でユーザーリストを検索し、結果を表示します。
+// [Unambiguous] 入力された名前でユーザーリストを検索し、見つからなければメッセージを表示します。
+// [Exhaustive] ユーザーが見つかった場合は何も表示せず、見つからなければ「User not Found!」と表示します。
+// [Troubleshooting] 入力エラーや検索エラーに対する具体的な対処はありませんが、ユーザーが見つからない場合にメッセージを表示します。
+// [Contextualizing] ユーザー情報を管理するシステム内で、特定のユーザーを名前で検索するために使用されます。
+// [Condensing] ユーザーの名前を入力してリストから検索し、見つからない場合はメッセージを表示します。"
+"L7","gpt-4o","main","D","C","False","data\levels\L7\Meeting_Room_Reservation_System_L7.c","257","int main()
+{","// [Logical] この関数はプログラムのエントリーポイントとして、メインメニューを表示するために呼び出されます。
+// [Precise] MainMenu関数を呼び出し、その後プログラムを終了します。
+// [Unambiguous] プログラム開始時にMainMenu関数を実行し、終了コード0を返します。
+// [Exhaustive] MainMenu関数の実行後、正常終了を示す0を返します。
+// [Troubleshooting] この関数自体はエラー処理を行いませんが、MainMenu関数内でのエラー処理が必要です。
+// [Contextualizing] この関数はC言語プログラムの開始地点として、ユーザーにメインメニューを提示する際に使用されます。
+// [Condensing] プログラム開始時にメインメニューを表示し、正常終了します。"
+"L99","gpt-4o","CheckRoomAvailabilityScreen","A","C","False","data\levels\L99\Meeting_Room_Reservation_System_L99.c","1200","void CheckRoomAvailabilityScreen(RoomPtr RoomList)
+{","// === RE5 BEGIN ===
+// CONTRACT
+// @purpose 会議室の空き状況を確認するための画面を表示する。
+// @pre     ユーザーが会議室の空き状況を確認したい。
+// @post    ユーザーが選択した方法で会議室の空き状況を検索する。
+// @errors  無効な選択肢が入力された場合、エラーメッセージを表示する。
+// DATAFLOW
+// @reads   ユーザーの選択肢を読み取る。
+// @writes  選択された方法に基づいて会議室の検索を実行する。
+// @calls   SearchRoomByNameScreenまたはSearchRoomByIDScreenを呼び出す。
+// ENTITIES & ER
+// @entity  Room
+// @er      Reservation.userId→User.id; Reservation.roomId→Room.id
+// UI & FLOW
+// @screen  会議室空き状況確認画面
+// @flow    ユーザーが選択肢を選び、対応する検索画面に遷移する。
+// === RE5 END ==="
+"L99","gpt-4o","DeleteReservationByID","B","A","False","data\levels\L99\Meeting_Room_Reservation_System_L99.c","1366","ReservationPtr DeleteReservationByID(ReservationPtr ReservationList, int ID)
+{","// === RE5 BEGIN ===
+// CONTRACT
+// @purpose 予約をIDで削除する
+// @pre     削除する予約IDを指定する
+// @post    予約が削除され、更新された予約リストが返される
+// @errors  指定されたIDの予約が存在しない場合、エラーメッセージを返す
+// DATAFLOW
+// @reads   予約リストから指定されたIDの予約を検索する
+// @writes  指定されたIDの予約を削除し、更新された予約リストを返す
+// @calls   メモリ解放のためにfree関数を呼び出す
+// ENTITIES & ER
+// @entity  Reservation
+// @er      Reservation.userId→User.id; Reservation.roomId→Room.id
+// UI & FLOW
+// @screen  予約管理画面
+// @flow    ユーザーが予約IDを入力し、削除ボタンを押すと、予約が削除される
+// === RE5 END ==="
+"L99","gpt-4o","DeleteRoomByID","D","C","False","data\levels\L99\Meeting_Room_Reservation_System_L99.c","978","RoomPtr DeleteRoomByID(RoomPtr RoomList, int ID)
+{","// === RE5 BEGIN ===
+// CONTRACT
+// @purpose 予約管理システムの予約追加、検索、更新機能を提供する。
+// @pre     ユーザーIDと会議室IDの存在を確認する。
+// @post    予約情報をデータベースに保存し、成功メッセージを返す。
+// @errors  ユーザーIDが存在しません、会議室IDが存在しません、予約が重複しています。
+// DATAFLOW
+// @reads   ユーザー情報、会議室情報、予約情報。
+// @writes  新しい予約情報。
+// @calls   会議室IDの存在チェック、予約情報の更新処理。
+// ENTITIES & ER
+// @entity  User, Room, Reservation
+// @er      Reservation.userId→User.id; Reservation.roomId→Room.id
+// UI & FLOW
+// @screen  予約追加画面、予約検索画面、予約更新画面。
+// @flow    ユーザーID、会議室ID、予約情報を入力し、処理結果を表示する。
+// === RE5 END ==="
+"L99","gpt-4o","DisplayReservationCard","A","D","False","data\levels\L99\Meeting_Room_Reservation_System_L99.c","1305","void DisplayReservationCard(ReservationPtr Reservation)
+{","// =========================================================================== Reservation Management ===========================================================================
+
+// === RE5 BEGIN ===
+// CONTRACT
+// @purpose 予約カードの表示
+// @pre     ReservationPtr型の予約情報が必要
+// @post    予約情報がフォーマットされた形で表示される
+// @errors  予約情報がNULLの場合、未定義の動作が発生する可能性がある
+// DATAFLOW
+// @reads   Reservationの各フィールド
+// @writes  コンソールへの出力
+// @calls   printf関数
+// ENTITIES & ER
+// @entity  Reservation, User, Room
+// @er      Reservation.userId→User.id; Reservation.roomId→Room.id
+// UI & FLOW
+// @screen  予約表示画面
+// @flow    予約情報を取得し、表示する
+// === RE5 END ==="
+"L99","gpt-4o","ReadIntBetween","A","D","False","data\levels\L99\Meeting_Room_Reservation_System_L99.c","125","int ReadIntBetween(int from, int to)
+{","// === RE5 BEGIN ===
+// CONTRACT
+// @purpose ユーザーが指定した範囲内の整数を入力するための関数
+// @pre     ユーザーが整数を入力する準備をする
+// @post    指定された範囲内の整数を返す
+// @errors  範囲外の整数が入力された場合、再入力を促す
+// DATAFLOW
+// @reads   ユーザーからの整数入力
+// @writes  なし
+// @calls   scanf, printf
+// ENTITIES & ER
+// @entity  User, Room, Reservation
+// @er      Reservation.userId→User.id; Reservation.roomId→Room.id
+// UI & FLOW
+// @screen  会議室追加画面
+// @flow    会議室情報を入力し、データベースに保存する
+// === RE5 END ==="
+"L99","gpt-4o","ReservationManagementMenu","C","D","False","data\levels\L99\Meeting_Room_Reservation_System_L99.c","1755","void ReservationManagementMenu(ReservationPtr *ReservationList, UserPtr UserList, RoomPtr *RoomList)
+{","// === RE5 BEGIN ===
+// CONTRACT
+// @purpose 予約管理メニューの表示と操作
+// @pre     予約リスト、ユーザーリスト、部屋リストを準備すること
+// @post    ユーザーの選択に応じた操作を実行すること
+// @errors  無効な選択肢が入力された場合にエラーメッセージを表示
+// DATAFLOW
+// @reads   予約リスト、ユーザーリスト、部屋リスト
+// @writes  新しい予約の追加、予約の削除、予約の表示、予約のソート
+// @calls   AddNewReservationScreen, DeleteReservationScreen, DisplayReservationsScreen, SortReservationsByDateScreen
+// ENTITIES & ER
+// @entity  User, Room, Reservation
+// @er      Reservation.userId→User.id; Reservation.roomId→Room.id
+// UI & FLOW
+// @screen  予約管理メニュー
+// @flow    ユーザーが選択肢を選び、対応する操作を実行
+// === RE5 END ==="
+"L99","gpt-4o","SearchUserByFirstNameScreen","A","C","False","data\levels\L99\Meeting_Room_Reservation_System_L99.c","604","void SearchUserByFirstNameScreen(UserPtr UserList)
+{","// === RE5 BEGIN ===
+// CONTRACT
+// @purpose ユーザーの名前で検索する機能
+// @pre     ユーザーリストが提供されること
+// @post    検索結果が表示されること
+// @errors  ユーザーが見つからない場合のエラーメッセージ
+// DATAFLOW
+// @reads   ユーザーリスト、ユーザーの名前
+// @writes  検索結果の表示
+// @calls   SearchUserByFirstName
+// ENTITIES & ER
+// @entity  User(id, 名前, メールアドレス, 作成日時)
+// @er      Reservation.userId→User.id
+// UI & FLOW
+// @screen  名前で検索する画面
+// @flow    ユーザーが名前を入力し、結果が表示される
+// === RE5 END ==="
+"L99","gpt-4o","main","D","C","False","data\levels\L99\Meeting_Room_Reservation_System_L99.c","357","int main()
+{","// === RE5 BEGIN ===
+// CONTRACT
+// @purpose メインメニューを表示するため
+// @pre     初期化処理が必要
+// @post    メインメニューが表示される
+// @errors  メニュー表示に失敗した場合のエラーハンドリング
+// DATAFLOW
+// @reads   ユーザー情報、部屋情報、予約情報
+// @writes  予約情報の作成
+// @calls   MainMenu関数
+// ENTITIES & ER
+// @entity  User, Room, Reservation
+// @er      Reservation.userId→User.id; Reservation.roomId→Room.id
+// UI & FLOW
+// @screen  メインメニュー画面
+// @flow    ユーザーがメインメニューを操作する
+// === RE5 END ==="
