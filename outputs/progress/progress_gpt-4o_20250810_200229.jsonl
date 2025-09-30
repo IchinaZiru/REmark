@@ -1,0 +1,4 @@
+{"level": 4, "model": "gpt-4o", "total_questions": 48, "elapsed_sec_printed": 1226.28, "out_csv": "outputs\\mcqa_results\\gpt-4o\\L4.csv", "returncode": 0, "status": "ok", "stderr_snippet": ""}
+{"level": 5, "model": "gpt-4o", "total_questions": 48, "elapsed_sec_printed": null, "out_csv": null, "returncode": 1, "status": "error", "stderr_snippet": ""}
+{"level": 6, "model": "gpt-4o", "total_questions": 48, "elapsed_sec_printed": null, "out_csv": null, "returncode": 1, "status": "error", "stderr_snippet": ""}
+{"level": 7, "model": "gpt-4o", "total_questions": 48, "elapsed_sec_printed": null, "out_csv": null, "returncode": 1, "status": "error", "stderr_snippet": ""}
