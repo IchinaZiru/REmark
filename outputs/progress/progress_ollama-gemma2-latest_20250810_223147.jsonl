@@ -1,0 +1,8 @@
+{"level": 0, "model": "ollama-gemma2:latest", "total_questions": 48, "elapsed_sec_printed": 134.36, "out_csv": "outputs\\mcqa_results\\ollama-gemma2-latest\\L0.csv", "returncode": 0, "status": "ok", "stderr_snippet": ""}
+{"level": 1, "model": "ollama-gemma2:latest", "total_questions": 48, "elapsed_sec_printed": 120.92, "out_csv": "outputs\\mcqa_results\\ollama-gemma2-latest\\L1.csv", "returncode": 0, "status": "ok", "stderr_snippet": ""}
+{"level": 2, "model": "ollama-gemma2:latest", "total_questions": 48, "elapsed_sec_printed": 126.88, "out_csv": "outputs\\mcqa_results\\ollama-gemma2-latest\\L2.csv", "returncode": 0, "status": "ok", "stderr_snippet": ""}
+{"level": 3, "model": "ollama-gemma2:latest", "total_questions": 48, "elapsed_sec_printed": 122.82, "out_csv": "outputs\\mcqa_results\\ollama-gemma2-latest\\L3.csv", "returncode": 0, "status": "ok", "stderr_snippet": ""}
+{"level": 4, "model": "ollama-gemma2:latest", "total_questions": 48, "elapsed_sec_printed": 123.13, "out_csv": "outputs\\mcqa_results\\ollama-gemma2-latest\\L4.csv", "returncode": 0, "status": "ok", "stderr_snippet": ""}
+{"level": 5, "model": "ollama-gemma2:latest", "total_questions": 48, "elapsed_sec_printed": 121.51, "out_csv": "outputs\\mcqa_results\\ollama-gemma2-latest\\L5.csv", "returncode": 0, "status": "ok", "stderr_snippet": ""}
+{"level": 6, "model": "ollama-gemma2:latest", "total_questions": 48, "elapsed_sec_printed": 130.22, "out_csv": "outputs\\mcqa_results\\ollama-gemma2-latest\\L6.csv", "returncode": 0, "status": "ok", "stderr_snippet": ""}
+{"level": 7, "model": "ollama-gemma2:latest", "total_questions": 48, "elapsed_sec_printed": 120.68, "out_csv": "outputs\\mcqa_results\\ollama-gemma2-latest\\L7.csv", "returncode": 0, "status": "ok", "stderr_snippet": ""}
