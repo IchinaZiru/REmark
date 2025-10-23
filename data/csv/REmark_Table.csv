@@ -1,0 +1,17 @@
+﻿id,テーブル名,項目名,データ形式,制約,初期値,外部キー,概要
+tab-001,ユーザー,id,uuid,PRIMARY KEY,gen_random_uuid(),,ユーザーのユニークな識別子
+tab-001,ユーザー,名前,text,NOT NULL,,,ユーザーの名前
+tab-001,ユーザー,メールアドレス,text,"NOT NULL, UNIQUE",,,ユーザーの連絡先メールアドレス
+tab-001,ユーザー,作成日時,timestamp with time zone,NOT NULL,now(),,レコードが作成された日時
+tab-002,会議室,id,uuid,PRIMARY KEY,gen_random_uuid(),,会議室のユニークな識別子
+tab-002,会議室,部屋名,text,"NOT NULL, UNIQUE",,,会議室の名前または番号
+tab-002,会議室,収容人数,integer,NOT NULL,,,会議室の最大収容人数
+tab-002,会議室,説明,text,,,,会議室に関する追加の説明
+tab-002,会議室,作成日時,timestamp with time zone,NOT NULL,now(),,レコードが作成された日時
+tab-003,予約,id,uuid,PRIMARY KEY,gen_random_uuid(),,予約のユニークな識別子
+tab-003,予約,ユーザーID,uuid,NOT NULL,,ユーザー (id),予約を行ったユーザーのID
+tab-003,予約,会議室ID,uuid,NOT NULL,,会議室 (id),予約された会議室のID
+tab-003,予約,開始日時,timestamp with time zone,NOT NULL,,,予約の開始日時
+tab-003,予約,終了日時,timestamp with time zone,NOT NULL,,,予約の終了日時
+tab-003,予約,ステータス,text,NOT NULL,'確定済み',,予約のステータス（例：保留中、確定済み、キャンセル済み）
+tab-003,予約,作成日時,timestamp with time zone,NOT NULL,now(),,レコードが作成された日時
