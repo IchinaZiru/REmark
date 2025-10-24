@@ -1,0 +1,10 @@
+﻿# Index for L0 (gpt-4o)
+
+- `DeleteReservationByID` (720-738)
+- `DeleteRoomByID` (502-520)
+- `DisplayReservationCard` (693-705)
+- `DisplayUserCard` (194-201)
+- `ReadIntBetween` (74-84)
+- `ReservationManagementMenu` (939-977)
+- `SearchUserByFirstNameScreen` (298-313)
+- `main` (187-191)
