@@ -3,4 +3,5 @@ venv/
 __pycache__
 models/
 3d_scatter_plot.html
-auto_commit.sh
+auto_commit.sh.vscode/
+data/mcqa_pools_refined_v4/debug/*.zip
