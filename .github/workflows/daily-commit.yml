@@ -1,0 +1,47 @@
+name: Daily commit (JST)
+
+on:
+  schedule:
+    # GitHub Actions の cron は UTC。JST(UTC+9)の 00:00 は 15:00 UTC
+    - cron: "0 15 * * *"
+  # 手動実行ボタンも付けておくと検証に便利
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-commit
+  cancel-in-progress: true
+
+jobs:
+  commit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up git identity
+        run: |
+          git config user.name "${GITHUB_ACTOR}"
+          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+
+      - name: Update daily stamp (idempotent)
+        id: stamp
+        run: |
+          DATE=$(TZ=Asia/Tokyo date +%F)     # 例: 2025-11-04
+          mkdir -p .daily
+          echo "$DATE" > .daily/todays_date.txt
+          # 変更があるときだけ "changed=true"
+          if git diff --quiet -- .daily/todays_date.txt; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit & push if changed
+        if: steps.stamp.outputs.changed == 'true'
+        run: |
+          DATE=$(TZ=Asia/Tokyo date +%F)
+          git add .daily/todays_date.txt
+          git commit -m "chore: daily tick for $DATE (JST)"
+          git push
